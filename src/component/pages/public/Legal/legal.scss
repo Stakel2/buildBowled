@@ -1,0 +1,57 @@
+.legalLayout {
+  // padding-top: 100px;
+  background: linear-gradient(155deg, #0f063e 62%, #1e0725 94%);
+  height: auto;
+  // @media (max-width: 767px) {
+  //   padding-top: 30px;
+  // }
+  h1 {
+    margin: 30px 0;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.privacy_sec {
+  border-radius: 16px;
+  padding: 50px 60px;
+  max-width: 80%;
+  margin: 20px auto 50px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  background: linear-gradient(164deg, #01012a 0%, #02274dd6 90%);
+  @media (max-width: 767px) {
+    padding: 20px;
+    max-width: 100%;
+    margin: 20px auto 30px;
+  }
+  h2 {
+    font-weight: 500;
+  }
+  ul {
+    list-style-type: none;
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  &.privacy_sec_term {
+    ul {
+      li {
+        margin: 10px 0;
+      }
+    }
+    h2 {
+      margin: 20px 0;
+      font-weight: 600;
+    }
+  }
+  h5,
+  h3 {
+    margin-top: 20px;
+  }
+}

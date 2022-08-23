@@ -1,0 +1,172 @@
+{
+"GALLERYITEM": [
+    {
+        "id":1,
+        "img":"../images/gallery_1.jpg",
+        "title":"Ultimate Red Witch",
+        "subTitle":"The Visionary", 
+        "edition": "Edition 1 of 10",
+        "purchase":"180.00"
+    },
+    {
+        "id":2,
+        "img":"../images/gallery_2.jpg",
+        "title":"Abstract",
+        "subTitle":"Balloon boy", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    },
+    {
+        "id":3,
+        "img":"../images/gallery_3.jpg",
+        "title":"Girl in a Blue Dress",
+        "subTitle":"Thomas Moon", 
+        "edition": "Edition of one",
+        "purchase":"Accepting Offers"
+    },
+    {
+        "id":4,
+        "img":"../images/gallery_4.jpg",
+        "title":"Smile",
+        "subTitle":"Happy Lady", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    },
+    {
+        "id":5,
+        "img":"../images/gallery_5.jpg",
+        "title":"Ultimate Red Witch",
+        "subTitle":"The Visionary", 
+        "edition": "Edition 1 of 10",
+        "purchase":"180.00"
+    },
+    {
+        "id":6,
+        "img":dancingDoll,
+        "title":"Dancing Doll",
+        "subTitle":"Edition of one", 
+        "edition": "Artist",
+        "purchase":"180.00"
+    },
+    {
+        "id":7,
+        "img":abstract,
+        "title":"Abstract",
+        "subTitle":"Balloon boy", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    },
+    {
+        "id":8,
+        "img":bride,
+        "title":"Bride",
+        "subTitle":"Photo", 
+        "edition": "Edition of one",
+        "purchase":"180.00"
+    },
+    {
+        "id":9,
+        "img":handsWithEyes,
+        "title":"Two Red Hands with Eyes",
+        "subTitle":"John Wick", 
+        "edition": "Edition of one",
+        "purchase":"180.00"
+    },
+    {
+        "id":10,
+        "img":happyLady,
+        "title":"Smile",
+        "subTitle":"Happy Lady", 
+        "edition": "Edition of one",
+        "purchase":"180.00"
+    },
+    {
+        "id":11,
+        "img":rabbitHoleStreet,
+        "title":"Rabbit Hole Street",
+        "subTitle":"The Visionary", 
+        "edition": "Edition 1 of 10",
+        "purchase":"180.00"
+    },
+    {
+        "id":12,
+        "img":abstract01,
+        "title":"Abstract 01",
+        "subTitle":"Artist", 
+        "edition": "Edition of one",
+        "purchase":"180.00"
+    },
+    {
+        "id":13,
+        "img":hands,
+        "title":"Hands",
+        "subTitle":"Balloon boy", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    },
+    {
+        "id":14,
+        "img":ladyInBlue,
+        "title":"Lady in Blue",
+        "subTitle":"Photo", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    },
+    {
+        "id":15,
+        "img":twoRedHands,
+        "title":"Two Red Hands with Eyes",
+        "subTitle":"John Wick", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    },
+    {
+        "id":16,
+        "img":dark,
+        "title":"Dark",
+        "subTitle":"Scarlet", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    },
+    {
+        "id":17,
+        "img":laker,
+        "title":"Laker’s Kobe",
+        "subTitle":"Scarlet", 
+        "edition": "The Visionary",
+        "purchase":"180.00"
+    },
+    {
+        "id":18,
+        "img":dancingDoll,
+        "title":"Dancing Doll",
+        "subTitle":"Artist", 
+        "edition": "Edition of one",
+        "purchase":"180.00"
+    },
+    {
+        "id":19,
+        "img":abstract21,
+        "title":"Abstract",
+        "subTitle":"Balloon boy", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    },
+    {
+        "id":20,
+        "img":abstract22,
+        "title":"Abstract",
+        "subTitle":"Photo", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    },
+    {
+        "id":21,
+        "img":prism,
+        "title":"Prism",
+        "subTitle":"John Wick", 
+        "edition": "Edition of one",
+        "purchase":"80.00"
+    }
+]
+}

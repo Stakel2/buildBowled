@@ -1,0 +1,16 @@
+@import '../../../assets/styles/_var.scss';
+
+.sw_style{
+    background: #widgetBg;
+    .sw_header_style{
+        h2{
+            font-family: $basefont;
+            font-size: 34px;
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+    .sw_body_style{
+
+    }
+}

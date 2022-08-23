@@ -1,0 +1,281 @@
+@import '../../../assets/styles/_var.scss';
+
+.hideFilterBlock.container-fluid {
+    position: absolute;
+    z-index: 10;
+    top: 10%;
+    
+    @media(max-width:990px){
+        top: 8%;
+    }
+    @media(max-width:898px){
+        top: 6%;
+    }
+    @media(max-width:750px){
+        top: 2%;
+    }
+}
+.filterHeader{
+    padding-left: 0;
+    padding-right: 0;
+    
+    .fd_link{
+        padding-right:0;
+        padding-left:0;
+        width: 66px;  
+        flex-basis: auto;
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent linear-gradient(90deg, #F7CEB2 0%, #994E25 100%) 0% 0% no-repeat padding-box;
+            text-decoration: none;
+            font-weight: 700;
+            color: $baseColor;
+            text-transform: uppercase;
+            height: 60px;
+            width: 66px;                    
+            box-sizing: border-box;
+            border-radius: 5px;  
+            border:0px;          
+        }
+    }
+   
+}
+
+
+
+
+.filter_wrap{
+    position: absolute;
+    right: 0px;
+    background-color: $bgFilter;
+    min-height: 400px;
+    margin-bottom: 100px;
+    padding-left: 88px;
+    padding-right: 88px;
+    padding-bottom: 43px;
+    transition: height .55s;
+    border-radius: 5px;
+    max-width: 720px;
+    margin-right: 0;
+    top: 100%;
+    z-index: 10;
+
+    @media(max-width:768px){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &.hideBlock{
+        height:0px;
+        overflow:hidden;
+        padding:0px;
+        min-height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    } 
+    .accordion-item{
+        background-color: transparent !important;
+        border: 0px !important;
+        .accordion-header{
+            .accordion-button{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                background-color: transparent;
+                border-radius: 0px;
+                outline: none;
+                box-shadow: none;
+                font-size: 24px;
+                color: $white;
+                &::after{
+                    background-image: url(../../../assets/images/arrow_accordion.svg);
+                }
+            }
+            .accordion-button:not(.collapsed){
+                background-color: transparent;
+                font-size: 24px;
+                color: $white;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                box-shadow: none;
+            }
+        }
+        .accordion-body{
+            color: $white;
+            padding:10px 0;
+
+
+            &.filter_status{
+                .btn-filter{
+                    border: solid 1px transparent;
+                    font-weight: 500;
+                    text-shadow: none;
+                    background: linear-gradient(90deg, #f7ceb2 0%, #994e25 100%) 0% 0% no-repeat padding-box;
+                    border-radius: 8px;
+                    position: relative;
+                    font-family: $btnFont;
+                    font-size: 18px;
+                    height: 50px;
+                    outline: 0px;
+                    box-shadow: none;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    border:1px solid $borderNFTCard;
+                    span{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        font-family: $btnFont;
+                        background: #1E1E1E;
+                        left: 50%;
+                        top: 50%;
+                        border-radius: 6px;
+                        transform: translate(-50%, -50%);
+                        line-height: 50px;
+                        transition: all .25s;
+                        color:$white ;
+                        font-size: 14px;
+                    }
+                    &.isActive{
+                        span {
+                            background: transparent;
+                        }                        
+                    }
+                }
+ 
+            }
+            
+        }
+    }
+}
+
+.filter_input_style{
+    
+    ::-webkit-input-placeholder { 
+        color: $white;
+    } 
+    :-ms-input-placeholder { 
+    color: $white;
+    }
+    ::placeholder {
+    color: $white;
+    }
+
+    select.form-control{
+        height: 50px;
+        text-align: left;
+        font-size: 14px;
+        color: $filterTextColor;
+        font-size: 14px;
+        border-radius: 6px;
+        font-family: $basefont;
+        background: $bgNFTCard;
+        border-color: $inputBorder;
+        outline: none;
+        box-shadow: none;
+        padding-left: 30px;
+        background-image: url(../../../assets/images/arrow_select_dropdown.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    input[type="text"].form-control,
+    input[type="number"].form-control{
+        height: 50px;
+        text-align: left;
+        font-size: 14px;
+        color: $filterTextColor;
+        font-family: $basefont;
+        font-weight: 400;
+        background: $bgNFTCard;
+        border-radius: 6px;
+        border-color: $inputBorder;
+        outline: none;
+        box-shadow: none;
+        padding-left: 30px;
+
+        &.inputSearch{
+            height: 60px;
+            background-image: url(../../../assets/images/icon_m_search.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding-right: 75px;
+            font-size: 16px;
+        }
+
+        &.inputDate{
+            text-align: center;
+            height: 60px;
+            font-size: 16px;
+        }
+
+        
+        
+       
+    }
+    .checkox_block{
+        display: flex;
+        flex-wrap: wrap;
+
+        .form-check{
+            width: 50%;
+            .form-check-input[type=radio]{
+                border-radius: 0px;
+                width: 2rem;
+                height: 2rem;
+                margin-bottom:26px;
+            }
+            .filter_input_style .checkox_block .form-check .form-check-input:checked[type=radio]{
+                background-image: url(../../../assets/images/radio_btn_style.svg);
+            }
+            .form-check-input:checked[type=radio]{
+                background-image: none;
+            }
+            .form-check-label{
+                font-family: $basefont;
+                font-size: 25px;
+                color: $white;
+                font-weight: 700;
+                margin-left: 23px;
+            }
+        }
+    }
+    label.filter_labels{
+        font-family: $basefont;
+        font-size: 25px;
+        color: $white;
+        font-weight: 700;
+        margin-bottom: 23px;
+    }
+}
+
+
+.filter_input_style{
+    width: calc(100% - 66px);
+    flex-basis: auto;
+
+    &.full-width{
+        width:100%;
+    }
+    > .row{
+       
+
+        .searchBar{
+            width: calc(100% - 180px);
+            flex-basis: auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .searchButton{
+            width: 180px;
+            flex-basis: auto;
+        }
+    }
+}
+.filter-row-style{
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+

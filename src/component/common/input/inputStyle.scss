@@ -1,0 +1,175 @@
+@import "../../../assets/styles/_themevar.scss";
+
+.east_form_input {
+  margin-bottom: 14px;
+  @media (max-width: 1600px) {
+    margin-bottom: 19px;
+  }
+  .form-label {
+    font-family: $Basefont;
+    font-size: 14px;
+    color: $white;
+    opacity: 0.4;
+    font-weight: 300;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+    }
+    @media (max-width:600px){
+      font-size: 14px;
+    }
+  }
+  .form-control {
+    height: 60px;
+    border-radius: 0px;
+    border-color: $fieldBorder;
+    font-family: $Basefont;
+    background: $fieldBg;
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+    border-radius: 10px;
+    border-width: 1.5px;
+    transition: all 0.25s;
+    outline: none !important;
+    box-shadow: none !important;
+    padding-left: 30px;
+    @media (max-width:600px){
+      padding-left: 15px !important;
+      font-size: 13px !important;
+      padding-right: 15px !important;
+    }
+     &:focus {
+      background: $fieldBg;
+      border-color: $baseColor;
+      color: $white;
+    }
+    @media (max-width: 1600px) {
+      height: 51px;
+    }
+    @media (max-width: 1440px) {
+      padding-left: 20px;
+    }
+    &.datePiker {
+      background-image: url(../../../assets/images/icon_datePicker.png);
+      background-repeat: no-repeat;
+      background-position: center right;
+    }
+  }
+}
+
+.east_form_textarea {
+  margin-bottom: 39px;
+  @media (max-width: 1600px) {
+    margin-bottom: 19px;
+  }
+  .form-label {
+    font-family: $Basefont;
+    font-size: 19px;
+    color: $white;
+    font-weight: 400;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.social_link_input {
+  .form-label {
+    font-family: $Basefont;
+    font-size: 16px;
+    color: $white;
+    font-weight: 500;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.subscribe_form_input {
+  .form-label {
+    font-family: $Basefont;
+    font-size: 19px;
+    color: $white;
+    font-weight: 700;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+    }
+  }
+  .form-control {
+    height: 58px;
+    border: 2px solid #994e257a;
+    font-family: $Basefont;
+    font-size: 14px;
+    font-weight: 300;
+    background: $fieldBg;
+    color: $white;
+    border-radius: 8px;
+    padding-left: 30px;
+    @media (max-width: 1600px) {
+      height: 51px;
+      font-size: 17px;
+    }
+    @media (max-width: 990px) {
+      text-align: center;
+    }
+  }
+  .error {
+    text-align: center;
+  }
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: $white;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $white;
+  }
+
+  ::placeholder {
+    color: $white;
+  }
+}
+
+.selectStyle {
+  margin-bottom: 35px;
+  @media (max-width: 1600px) {
+    margin-bottom: 19px;
+  }
+  .form-label {
+    font-family: $Basefont;
+    font-size: 19px;
+    color: $white;
+    font-weight: 300;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+    }
+  }
+  .form-control {
+    height: 50px;
+    border-radius: 0px;
+    border-color: $baseColor;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: $baseColor;
+    background: $fieldBg;
+    font-weight: 400;
+    text-align: left;
+    background-image: url("../../../assets/images/dropDown_arrow.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    @media (max-width: 1600px) {
+      height: 51px;
+      font-size: 17px;
+    }
+  }
+  &.textLeft {
+    .form-control {
+      text-align: left;
+    }
+    option {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import '../../../assets/market/styles/_var.scss';
+
+
+.cardPackStyle{
+    display: flex;
+    align-items: center;
+    background: #1a0e5b url(../../../assets/market/bg_cards.jpg);
+    border-radius: 10px;
+    padding:39px;
+    padding-right: 10px;
+    @media(max-width:590px){
+        padding:14px 10px;
+    }
+    .cardImage{
+        width: 133px;
+        margin-right: 25px;
+
+        @media(max-width:590px){
+            width: 75px;
+
+            img{
+                max-width: 100%;
+            }
+        }
+        
+    }
+    .titleStyle{
+        font-size: 24px;
+        font-weight: 700;
+        color: $subtitleColor;
+        @media(max-width:590px){
+            font-size: 16px;
+        }
+    }
+    .valueStyle{
+        font-size: 24px;
+        font-weight: 700;
+        color: $textWhite;
+        margin-bottom: 0;
+        display: flex;
+        @media(max-width:590px){
+            font-size: 14px;
+        }
+        img{
+            width: 14px;
+            margin-right: 6px;
+        }
+    }
+}

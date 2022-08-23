@@ -1,0 +1,342 @@
+@import "../../../../assets/styles/_var.scss";
+
+.wrap_heading {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.main_container {
+  padding: 10px;
+  background-color: #000;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main_containerbal {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(28, 28, 30);
+  min-height: 200px;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.margin_top_btm {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.margin_top50 {
+  padding-top: 50px;
+}
+.wallet_bal_container {
+  min-height: 400px;
+  width: calc(100% - 355px);
+  padding: 20px;
+  @media (max-width: 730px) {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .filter_input_style {
+    position: relative;
+    max-width: 250px;
+    @media (max-width: 730px) {
+      width: 100%;
+    }
+    select.form-control {
+      border-radius: 30px;
+      background: #2f2f35 url(../../../../assets/images/dropDown_arrow.png)
+        right center no-repeat;
+      padding-left: 62px;
+    }
+    .walletIcon {
+      position: absolute;
+      left: 8px;
+      top: 43px;
+      border-radius: 50%;
+      background: $white;
+      width: 39px;
+      height: 39px;
+      display: flex;
+      padding: 5px;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80%  !important
+    }
+      @media (max-width: 1600px) {
+        top: 39px;
+      }
+      
+    }
+  }
+}
+
+.wallet_address_container {
+  align-items: center;
+  align-content: center;
+  padding-left: 20px;
+  display: flex;
+  min-height: 400px;
+  width: 355px;
+
+  @media (max-width: 730px) {
+    padding-left: 0px;
+    width: 313px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  > .row {
+    justify-content: center;
+
+    .address {
+      flex-direction: row;
+      color: white;
+      font-size: 1rem;
+      margin-top: 10px;
+      background-color: rgba(42, 41, 46, 1);
+      text-align: center;
+      border-radius: 2px;
+      padding: 5px;
+      cursor: pointer;
+      max-width: 300px;
+    }
+  }
+}
+.margin_left_right_auto {
+  display: flex;
+  justify-content: center;
+}
+.balance {
+  font-family: $basefont;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 768px) {
+    > div {
+      padding-left: 0;
+    }
+  }
+}
+
+.lable {
+  font-family: $basefont;
+  color: gray;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.btn_check {
+  color: white;
+  background-color: rgba(42, 41, 46, 1);
+
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 2px;
+  border: 2px, blue;
+  padding: 10px;
+  cursor: pointer;
+}
+.copyImg {
+  height: 20px;
+  width: 20px;
+  background-color: aliceblue;
+  border-radius: 2px;
+  padding: 4px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.btn_uncheck {
+  background-color: rgba(42, 41, 46, 1);
+
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 2px;
+  border: 2px, gray;
+  padding: 10px;
+  cursor: pointer;
+}
+.qr {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  @media (max-width: 768px) {
+    padding: 4px;
+  }
+}
+
+.dark.modal {
+  .modal-content {
+    background: $bgNFTCard;
+    border-radius: 10px;
+    .modal-header {
+      background: $bgNFTCard;
+      border-bottom-color: $sepratorCard;
+      .modal-title.h4 {
+        font-size: 16px;
+        font-weight: 400;
+        color: $light;
+        border-radius: 10px;
+      }
+      .btn-close {
+        filter: invert(1) grayscale(100%) brightness(200%);
+      }
+    }
+    .modal-footer {
+      border-top-color: $sepratorCard;
+    }
+  }
+}
+
+.connectWallet {
+  text-decoration: underline;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.kaikasWalletButton {
+  padding: 10px;
+  display: grid;
+  text-align: center;
+  color: $white;
+}
+
+.widthdraw_deposit_req {
+  .form-label {
+    font-family: $basefont;
+    font-size: 19px;
+    color: $labelTextStyle;
+    font-weight: 400;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+    }
+  }
+  .form-control {
+    height: 58px;
+    border: 2px solid #994e257a;
+    font-family: $basefont;
+    font-size: 14px;
+    font-weight: 300;
+    background: $bgInput;
+    color: $inputTextStyle;
+    border-radius: 8px;
+    padding-left: 30px;
+    @media (max-width: 1600px) {
+      height: 51px;
+      font-size: 17px;
+    }
+    @media (max-width: 990px) {
+      text-align: center;
+    }
+  }
+}
+
+.wallet_button_section {
+  margin-bottom: 50px;
+  .btn-deposit {
+    min-width: 331px;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 10px;
+    border: 1px solid #059d00;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    color: #059d00;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    @media (max-width: 788px) {
+      min-width: 80px;
+      height: 41px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &:hover {
+      background: #059d00;
+      color: $white;
+    }
+  }
+  .btn-withdraw {
+    width: 131px;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 10px;
+    border: 1px solid #ff445d;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    color: #ff445d;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    @media (max-width: 788px) {
+      min-width: 80px;
+      height: 41px;
+      font-size: 14px;
+    }
+    &:hover {
+      background: #ff445d;
+      color: $white;
+    }
+  }
+}
+
+.btns-transaction {
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .btn-group {
+    padding-left: 0;
+    padding-right: 0;
+
+    .btn.btn-primary {
+      background: $light;
+      outline: none;
+      box-shadow: none;
+      background: #242429;
+      border-radius: 0px;
+      border: 0px;
+      &.btn-left {
+        border-top-left-radius: 10px;
+      }
+      &.btn-right {
+        border-top-right-radius: 10px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 12px;
+        min-width: 100px;
+      }
+
+      &.active {
+        background: transparent linear-gradient(90deg, #f7ceb2 0%, #994e25 100%)
+          0% 0% no-repeat padding-box;
+      }
+    }
+  }
+}

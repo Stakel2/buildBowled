@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.515" height="42.515" viewBox="0 0 42.515 42.515">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff2b6e"/>
+      <stop offset="1" stop-color="#2d0098"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.853" stop-color="#fff"/>
+      <stop offset="0.91" stop-color="#eaeaea"/>
+      <stop offset="1" stop-color="#c2c2c2"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7a7a7a"/>
+      <stop offset="0.112" stop-color="#5e5e5e"/>
+      <stop offset="0.28" stop-color="#3c3c3c"/>
+      <stop offset="0.451" stop-color="#222"/>
+      <stop offset="0.626" stop-color="#0f0f0f"/>
+      <stop offset="0.805" stop-color="#030303"/>
+      <stop offset="0.995"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_22246" data-name="Group 22246" transform="translate(-1726 -46.777)">
+    <g id="Group_21137" data-name="Group 21137" transform="translate(90 -66.577)">
+      <circle id="Ellipse_8740" data-name="Ellipse 8740" cx="17.67" cy="17.67" r="17.67" transform="translate(1636 147.75) rotate(-76.717)" fill="url(#linear-gradient)"/>
+      <path id="Path_50069" data-name="Path 50069" d="M-162.656,13.465a17.67,17.67,0,0,0-17.67,17.67,17.67,17.67,0,0,0,17.67,17.67,17.67,17.67,0,0,0,17.67-17.67A17.67,17.67,0,0,0-162.656,13.465Zm0,30.821a13.151,13.151,0,0,1-13.151-13.151,13.151,13.151,0,0,1,13.151-13.151A13.151,13.151,0,0,1-149.5,31.135,13.151,13.151,0,0,1-162.656,44.286Z" transform="translate(1819.913 103.476)" fill="url(#radial-gradient)" style="mix-blend-mode: color-burn;isolation: isolate"/>
+      <path id="Path_50072" data-name="Path 50072" d="M-108.753,24.013a1.8,1.8,0,0,1-1.8,1.8,1.8,1.8,0,0,1-1.8-1.8,1.8,1.8,0,0,1,1.8-1.8A1.8,1.8,0,0,1-108.753,24.013Z" transform="translate(1776.949 97.946)" fill="url(#radial-gradient-2)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+    </g>
+    <g id="person_outline_black_24dp" transform="translate(1735.139 56)">
+      <path id="Path_54496" data-name="Path 54496" d="M0,0H24V24H0Z" fill="none"/>
+      <path id="Path_54497" data-name="Path 54497" d="M12,5.9A2.1,2.1,0,1,1,9.9,8,2.1,2.1,0,0,1,12,5.9m0,9c2.97,0,6.1,1.46,6.1,2.1v1.1H5.9V17c0-.64,3.13-2.1,6.1-2.1M12,4a4,4,0,1,0,4,4A4,4,0,0,0,12,4Zm0,9c-2.67,0-8,1.34-8,4v3H20V17C20,14.34,14.67,13,12,13Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

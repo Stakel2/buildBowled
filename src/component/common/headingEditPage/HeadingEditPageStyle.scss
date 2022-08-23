@@ -1,0 +1,21 @@
+@import '../../../assets/styles/_var.scss';
+
+.edit_page_headingStyle{
+    padding-bottom: 50px;
+    @media(max-width:1600px){
+        padding-bottom: 50px;
+    }
+    @media(max-width:1200px){
+        padding-bottom: 0px;
+    }
+    h1{
+        font-family: $titlefont;
+        color: $baseColor;
+        font-weight: 700;
+        font-size: 52px;
+
+        @media(max-width:1700px){
+            font-size: 24px;
+        }
+    }
+}

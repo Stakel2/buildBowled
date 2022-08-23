@@ -1,0 +1,91 @@
+@import "../../../assets/styles/_themevar.scss";
+
+.btn-primary.cm_btn {
+  position: relative;
+  background: $GradientBtn;
+  border-radius: 12px;
+  height: 50px;
+  padding: 0 35px;
+  line-height: 42px;
+  font-size: 16px;
+  border: none;
+  font-family: $Basefont;
+  position: relative;
+  white-space: nowrap;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: $white;
+    background: $BorderGradient;
+    transition: all linear 0.3s;
+
+    &:before {
+      background: $StylishText;
+    }
+  }
+
+  &:focus {
+    box-shadow: unset;
+    background-color: none;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -1px;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    background: $BorderGradient;
+  }
+}
+
+.border_btn {
+  color: $textBlack;
+  background-color: #053855;
+  border-radius: 12px;
+  height: 50px;
+  padding: 0 35px;
+  line-height: 50px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: $baseColor;
+  display: inline-block;
+  position: relative;
+  transition: all linear 0.3s;
+
+  &:hover {
+    color: $white;
+    background: $BorderGradient;
+    transition: all linear 0.3s;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    background: $GradientBtn;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 12px;
+    height: 38px;
+    padding: 0 15px;
+    line-height: 38px;
+  }
+}

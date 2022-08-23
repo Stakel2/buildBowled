@@ -1,0 +1,164 @@
+@import '../../../assets/market/styles/_var.scss';
+
+.card.nftCard_style{
+    background: transparent;
+    border: 1px solid;
+    border-radius: 2rem;
+    perspective: 3000px;
+    @media(max-width:990px){
+        max-width: 250px;
+        margin: 0 auto 25px;
+    }
+    .featuredNftCard_img{
+        padding: 0px !important;
+        margin-bottom: 25px !important;
+        img{
+            transform:matrix3d(0.84, 0, 0.04, 0.0005, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(1px);
+            transition: all .25s;
+        }
+        &:hover{
+            img{
+                transform:matrix3d(0.99, 0, 0.04, 0.0000, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(1px); 
+            }
+        }
+    }
+        .card-img-top{
+            transform:matrix3d(0.84, 0, 0.04, 0.0005, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(1px);
+            transition: all .25s;
+            margin-bottom: 25px !important;
+        }
+    .card-body{
+        padding-top: 0;
+        padding-bottom: 0;
+        h4{
+            color: #595F75;
+            font-size: 14px;
+            margin-bottom: 5px;
+            span{
+                color: #fff;
+                font-size: 14px;
+                float: right;
+            }
+        }
+       
+        .col-lg-6{
+            padding-left: 0;
+        }
+        .price_title{
+            font-style: 14px;
+            color: $textDark;
+            font-weight: 400;
+        }
+        .price_value{
+            font-size: 18px;
+            font-weight: 700;
+            color: $textWhite;
+            text-align: right;
+            padding-right: 0;
+        }
+        .timer{
+            ul{
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+
+                li{
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+            font-size: 12px;
+            font-weight: 500;
+            color: $textWhite;
+        }
+        .bid_text{
+            text-align: right;
+            font-size: 12px;
+            font-weight: 400;
+            color: $textDark;
+            padding-right: 0;
+        }
+
+    }
+    .card-footer{
+        min-height: 110px;
+        .pricebox{
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 15px;
+            }
+        }
+        h6{
+            color: #595F75;
+            font-size: 14px;
+        }
+        h4{
+            color: #fff;
+            font-size: 14px;
+        }
+        .timerbox{
+            display: flex;
+            justify-content: space-between;
+        }
+        .cardBtn{
+            padding-top: 0px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 5;
+            left: 0;
+            right: 0;
+            justify-content: center;
+                .outline-primary{
+                    border: 1.5px solid #FF2B6E;
+                    color: #FF2B6E;
+                    min-width: 136px !important;
+                    padding: .475rem .75rem;
+                    &:hover{
+                        color: #0BD7E7;
+                    }
+                }
+                .outline-secondary{
+                    border: 1.5px solid #0BD7E7;
+                    color: #0BD7E7;
+                    min-width: 136px !important;
+                    padding: .475rem .75rem;
+                    &:hover{
+                        color: #FF2B6E;
+                    }
+                }
+        }
+    }
+    .cardBtn{
+        padding-top: 18px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .outline-primary{
+            border: 1.5px solid #FF2B6E;
+            color: #FF2B6E;
+            min-width: 136px !important;
+            padding: .475rem .75rem;
+            &:hover{
+                color: #0BD7E7;
+            }
+        }
+        .outline-secondary{
+            border: 1.5px solid #0BD7E7;
+            color: #0BD7E7;
+            min-width: 136px !important;
+            padding: .475rem .75rem;
+            &:hover{
+                color: #FF2B6E;
+            }
+        }
+    }
+    &:hover{
+        .card-img-top{
+        transform:matrix3d(0.99, 0, 0.04, 0.0000, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(1px); 
+        }
+    }
+}

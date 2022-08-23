@@ -1,0 +1,254 @@
+@import "../../../../assets/styles/_var.scss";
+
+.allRfl_cont {
+  padding-top: 50px;
+  @media (max-width: 767px) {
+    padding-top: 35px;
+  }
+  .comnHeading {
+    color: $baseColor;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    @media (max-width: 1440px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767px) {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .nftbe_claim {
+    margin: 0;
+    margin-top: 40px;
+    padding: 46px 0px 58px;
+    border-radius: 10px;
+    background-color: rgb(28, 28, 30);
+    justify-content: center;
+    @media (max-width: 992px) {
+      padding: 35px;
+    }
+    .slick-slider {
+      padding: 0 40px;
+      @media (max-width: 1600px) {
+        padding: 0 30px;
+      }
+      @media (max-width: 992px) {
+        padding: 0;
+      }
+      .slick-slide {
+        max-width: 25%;
+      }
+    }
+    .slick-prev {
+      left: -40px;
+      @media (max-width: 992px) {
+        left: -25px;
+      }
+    }
+    .slick-next {
+      right: -40px;
+      @media (max-width: 992px) {
+        right: -25px;
+      }
+    }
+  }
+  .buyTkt {
+    padding-top: 66px;
+    .buyTkt_group {
+      height: 60px;
+      margin-bottom: 23px;
+      max-width: 580px;
+      margin: 0 auto;
+      padding: 0;
+      width: 80%;
+
+      .form-control{
+        color: $white !important;
+        text-align: center;
+      }
+      .btn-primary {
+        min-width: 134px;
+      }
+      @media (max-width: 767px) {
+        height: 52px;
+      }
+      .form-control {
+        height: 100%;
+        background-color: transparent;
+        border: 2px solid #994E257A;;
+        border-radius: 7px;
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        border-right: 0;
+        z-index: 1;
+
+        &:focus{
+          border-color: $hovercolor;
+          background-color:$bgInputFocus ;
+        }
+        @media (max-width: 767px) {
+          padding-left: 15px;
+          font-size: 16px;
+        }
+        &:focus {
+          box-shadow: unset;
+        }
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+      .buyBtn {
+        border: 2px solid $baseColor;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 8px !important;
+        background-color: $baseColor;
+        color: $white;
+        padding: 12px 61px;
+        margin-left: -5px !important;
+        z-index: 2;
+        transition: 0.3s;
+        @media (max-width: 767px) {
+          padding: 8px 40px;
+          font-size: 14px;
+        }
+        &:hover {
+          color: $baseColor;
+          background-color: $white;
+        }
+      }
+    }
+  }
+  .tktHistory {
+    margin: 100px 0 150px;
+    @media (max-width: 767px) {
+      margin: 75px 0;
+    }
+  }
+}
+.customModal.buyToken_modalStyle {
+  max-width: 564px !important;
+  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.08);
+  .modal-content {
+    border-radius: 10px;
+    border: 0px;
+
+    .modal-header {
+      border-radius: 10px 10px 0 0;
+
+      .modal-title.h4 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 22px;
+      }
+    }
+    .modal-body {
+      padding-top: 30px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    .currency_list {
+      border-bottom: 1px solid #d6d6d6;
+      margin-bottom: 20px;
+      background: url(../../../../assets/images/checkbox_arrow.svg) right center
+        no-repeat;
+
+      &:last-child {
+        border-bottom: 0px solid;
+        margin-bottom: 0;
+      }
+
+      .currency_item {
+        display: block;
+        position: relative;
+        padding-left: 55px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding-bottom: 26px;
+
+        label {
+          margin-bottom: 0;
+        }
+        strong {
+          font-size: 16px;
+          margin-top: 10px;
+          display: inline-block;
+        }
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+        .checkmark {
+          position: absolute;
+          top: 4px;
+          left: 0;
+          height: 36px;
+          width: 36px;
+          background-color: $white;
+          border-radius: 5px;
+          border: 1px solid #d6d6d6;
+        }
+
+        &:hover input ~ .checkmark {
+          background-color: #efefef;
+        }
+        input:checked ~ .checkmark {
+          background-color: #000;
+          border-color: #000;
+        }
+
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .checkmark:after {
+          left: 12px;
+          top: 7px;
+          width: 8px;
+          height: 16px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+.buyTkt{
+  margin-bottom: 60px;
+
+  .total_price{
+    color: $light;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+
+    strong{
+      font-size: 38px;
+      position: relative;
+      bottom: -8px;
+      color: $hovercolor;
+      ;
+    }
+
+  }
+}

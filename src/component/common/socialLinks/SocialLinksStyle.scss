@@ -1,0 +1,161 @@
+@import '../../../assets/styles/_var.scss';
+
+.soc_linkStyle{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    li{
+        display: inline-block;
+        margin-left: 10px;
+        a{
+            display: block;
+            width: 34px;
+            height: 34px;
+            transition: all .25s;          
+            
+        }
+        &.soc_twitter{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/soc_twitter.svg);
+                mask-image: url(../../../assets/images/social/soc_twitter.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+
+                &:hover{
+                    background: #00acee;
+                }
+            }
+        }
+        &.soc_linkedIn{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/soc_linkedin.svg);
+                mask-image: url(../../../assets/images/social/soc_linkedin.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                &:hover{
+                    background: #0e76a8 ;
+                }
+            }
+        }
+        &.soc_discord{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/soc_discord.svg);
+                mask-image: url(../../../assets/images/social/soc_discord.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                &:hover{
+                    background: #738adb  ;
+                }
+            }
+        }
+        &.soc_telegram{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/soc_telegram.svg);
+                mask-image: url(../../../assets/images/social/soc_telegram.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                &:hover{
+                    background: #229ED9 ;
+                }
+            }
+        }
+        &.soc_instagram{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/soc_instagram.svg);
+                mask-image: url(../../../assets/images/social/soc_instagram.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                &:hover{
+                    background: #8a3ab9 ;
+                }
+            }
+        }
+        &.soc_facebook{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/soc_facebook.svg);
+                mask-image: url(../../../assets/images/social/soc_facebook.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+
+                &:hover{
+                    background: #4267B2;
+                }
+            }
+        }
+        &.soc_youtube{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/icon_youtube.svg);
+                mask-image: url(../../../assets/images/social/icon_youtube.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+
+                &:hover{
+                    background: #FF0000;
+                }
+            }
+        }
+        &.soc_snapchat{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/icon_snapchat.svg);
+                mask-image: url(../../../assets/images/social/icon_snapchat.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+
+                &:hover{
+                    background: #FFFC00;
+                }
+            }
+        }
+        &.soc_tiktok{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/icon_tiktok.svg);
+                mask-image: url(../../../assets/images/social/icon_tiktok.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+
+                &:hover{
+                    background: #ff0050;
+                }
+            }
+        }
+        &.soc_twitch{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/icon_twitch.svg);
+                mask-image: url(../../../assets/images/social/icon_twitch.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+
+                &:hover{
+                    background: #6441A5;
+                }
+            }
+        }
+        &.soc_weblink{
+            a{
+                background: $bgSocialIcon;
+                -webkit-mask-image: url(../../../assets/images/social/icon_webLink.svg);
+                mask-image: url(../../../assets/images/social/icon_webLink.svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+
+                &:hover{
+                    background: $white;
+                }
+            }
+        }
+      
+       
+    }
+}

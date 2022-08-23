@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="441.333" height="440.011" viewBox="0 0 441.333 440.011">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7000" data-name="Rectangle 7000" width="441.333" height="440.011" rx="20" fill="rgba(255,255,255,0.56)"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#111" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_1001" data-name="Group 1001" transform="translate(-278 -239)">
+    <g id="Group_998" data-name="Group 998">
+      <g id="Group_997" data-name="Group 997" transform="translate(278 239)">
+        <g id="Group_996" data-name="Group 996">
+          <g id="Group_215" data-name="Group 215">
+            <rect id="Rectangle_84" data-name="Rectangle 84" width="441.333" height="440.011" rx="20" fill="rgba(255,255,255,0.04)"/>
+            <g id="Mask_Group_254" data-name="Mask Group 254" opacity="0.3" clip-path="url(#clip-path)">
+              <ellipse id="Ellipse_8417" data-name="Ellipse 8417" cx="419.5" cy="361.5" rx="419.5" ry="361.5" transform="translate(7 -347)" fill="url(#radial-gradient)"/>
+              <ellipse id="Ellipse_8418" data-name="Ellipse 8418" cx="420" cy="363" rx="420" ry="363" transform="translate(-369 42)" opacity="0.5" fill="url(#radial-gradient)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Rectangle_7002" data-name="Rectangle 7002" transform="translate(278 239)" fill="none" stroke="#707070" stroke-width="1" opacity="0.2">
+        <rect width="441.333" height="440.011" rx="20" stroke="none"/>
+        <rect x="0.5" y="0.5" width="440.333" height="439.011" rx="19.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

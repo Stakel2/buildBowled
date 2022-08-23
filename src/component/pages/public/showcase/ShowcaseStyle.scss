@@ -1,0 +1,115 @@
+@import "../../../../assets/styles/_var.scss";
+
+.showCaseLayout {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (max-width: 1200px) {
+    padding-top: 20px;
+  }
+}
+.showcase_item {
+  margin-bottom: 35px;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+  &.comingSoon {
+    &:before {
+      position: absolute;
+      content: "Coming Soon!";
+      width: 250px;
+      height: 50px;
+      line-height: 45px;
+      font-family: $basefont;
+      font-size: 25px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      border-radius: 25px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%);
+      border: 3px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.pagination {
+  justify-content: flex-end;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  li {
+    margin: 0 3px;
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      a {
+        font-size: 0px;
+        background: url(../../../../assets/images/home/drop_slider_arrow_left.svg) no-repeat;
+        display: block;
+        background-position: left center;
+      }
+      &.active,
+      &:hover {
+        a {
+          background-color: transparent;
+        }
+      }
+    }
+    a {
+      border: 0px;
+      font-size: 18px;
+      color: $baseColor;
+      text-decoration: none;
+      padding:0 10px;
+      width: 26px;
+      height: 40px;
+      line-height: 37px;
+    
+    }
+
+    &:nth-last-child(-n + 2) {
+      a {
+        font-size: 0px;
+        background: url(../../../../assets/images/home/drop_slider_arrow_right.svg) no-repeat;
+        display: block;
+        background-position: right center;
+      }
+      &.active,
+      &:hover {
+        a {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &.active,
+    &:hover {
+      a {
+        color: $hovercolor;
+        
+        
+      }
+    }
+  }
+}
+.borderClass {
+  border: 2px solid #000;
+}
+
+
+.showcase_list_style{
+  margin-top: 54px;
+  .showcasepage_item{
+    border:1px solid $sepratorCard;
+    padding:16px;
+  }
+}

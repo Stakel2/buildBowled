@@ -1,0 +1,9 @@
+@import '../../../../assets/styles/_var.scss';
+
+.artist_block_main{
+    padding-top: 50px;
+
+    @media(max-width:1200px){
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,55 @@
+// @import "../../../../assets/styles/_themevar.scss";
+
+@import "../../../assets/styles/_themevar.scss";
+
+.link_text{
+    color: $LinkColor; transition: all ease 0.5s;
+    &:hover{
+      color: $baseColor; transition: all ease 0.5s;
+    }
+  }
+  
+.otp_area{
+  label{
+    font-size: 14px;
+    color: $white;
+    opacity: 0.4;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+.forgot_pass{
+  .rg_title{
+    p{
+      a{
+        color: $LinkColor;
+      }
+    }
+  }
+  .forgot_email{
+    position: relative;
+    .form-control{
+      padding-right: 100px;
+    }
+    .get_otp_link{
+      color: $LinkColor; position: absolute;
+      right: 20px;
+      top: 50px;
+      @media (max-width:1440px){
+    top: 47px;
+    font-size: 15px;
+      }
+      @media (max-width:767px){
+        right: 12px;
+    top: 48px;
+    font-size: 14px;
+      }
+    }
+  }
+}
+.text{
+  color: $white;
+}
+.op-5{
+  opacity: 0.5; font-size: 14px;
+}

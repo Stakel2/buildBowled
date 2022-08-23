@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.247" height="68.247" viewBox="0 0 68.247 68.247">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.485" cy="0.028" r="0.808" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fd9e50"/>
+      <stop offset="0.152" stop-color="#fd9e50"/>
+      <stop offset="0.251" stop-color="#f9894f"/>
+      <stop offset="0.452" stop-color="#f2544c"/>
+      <stop offset="0.601" stop-color="#ec294b"/>
+      <stop offset="0.834" stop-color="#8436a0"/>
+      <stop offset="1" stop-color="#3841df" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.36" cy="0.307" r="0.728" gradientUnits="objectBoundingBox">
+      <stop offset="0.152" stop-color="#fd9e50"/>
+      <stop offset="0.251" stop-color="#f9894f"/>
+      <stop offset="0.452" stop-color="#f2544c"/>
+      <stop offset="0.601" stop-color="#ec294b"/>
+      <stop offset="0.834" stop-color="#8436a0"/>
+      <stop offset="1" stop-color="#3841df"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_20040" data-name="Group 20040" transform="translate(-819.281 -919.125)">
+    <g id="Group_19981" data-name="Group 19981">
+      <ellipse id="Ellipse_8511" data-name="Ellipse 8511" cx="33.756" cy="33.756" rx="33.756" ry="33.756" transform="translate(819.503 919.493)" fill="none"/>
+      <path id="Ellipse_8511_-_Outline" data-name="Ellipse 8511 - Outline" d="M34.124,1.137A33,33,0,0,0,21.284,64.518,33,33,0,0,0,46.963,3.729,32.779,32.779,0,0,0,34.124,1.137m0-1.137A34.124,34.124,0,1,1,0,34.124,34.124,34.124,0,0,1,34.124,0Z" transform="translate(819.281 919.125)" fill="url(#radial-gradient)"/>
+      <path id="Path_12" data-name="Path 12" d="M251.159,50.984a8.58,8.58,0,0,0-2.616-5.52,8.962,8.962,0,0,0-5.93-2.408c-3.8-.208-12.827-.339-16,.179a8.161,8.161,0,0,0-7,6.281c-.771,2.752-.618,15.434-.169,18.155a8.187,8.187,0,0,0,6.5,7.054c2.552.66,15.089.574,17.9.119a8.2,8.2,0,0,0,7.084-6.468C251.676,65.55,251.417,53.531,251.159,50.984Zm-2.977,16.16a5.475,5.475,0,0,1-5.147,4.885c-2.609.285-14.259.443-16.679-.234a5.3,5.3,0,0,1-4.022-4.568,108.245,108.245,0,0,1-.006-16.321,5.467,5.467,0,0,1,5.126-4.864,113.987,113.987,0,0,1,15.92.064,5.475,5.475,0,0,1,4.875,5.156A115.914,115.914,0,0,1,248.182,67.144Zm-12.929-16.4a8.293,8.293,0,1,0,8.289,8.3A8.293,8.293,0,0,0,235.253,50.747ZM235.2,64.4a5.363,5.363,0,1,1,5.41-5.314A5.363,5.363,0,0,1,235.2,64.4Zm10.614-13.964a1.942,1.942,0,1,1-1.937-1.946A1.942,1.942,0,0,1,245.811,50.433Z" transform="translate(618.155 894.032)" stroke="#000f2e" stroke-width="1.5" fill="url(#radial-gradient-2)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,192 @@
+@import "../../../assets/styles/_themevar.scss";
+
+.timeline {
+  background-color: $bodybg;
+  padding: 75px 0 60px;
+  @media (max-width: 991px) {
+    padding: 50px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 50px 0 0;
+  }
+  .titleDiv {
+    margin-bottom: 110px;
+    @media (max-width: 1470px) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+    .title_head {
+      font-size: 50px;
+      @media (max-width: 991px) {
+        font-size: 30px;
+      }
+      span {
+        color: $LinkColor;
+        @media (max-width: 991px) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .timeline_area {
+    background-image: url("../../../assets/images/bowled-images/bg_icon.png");
+    z-index: 5;
+    background-size: 450px;
+    background-position: 60% center;
+    background-repeat: no-repeat;
+    @media (max-width: 767px) {
+      background-size: 230px;
+      background-position: 50% center;
+      background-attachment: fixed;
+    }
+  }
+  .raod_view {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      background: linear-gradient(
+        180deg,
+        rgba(9, 173, 194, 1) 80%,
+        rgba(9, 172, 194, 0.105) 100%
+      );
+      top: 85px;
+      bottom: 0;
+      left: 0;
+      margin-left: -3px;
+      @media (max-width: 1400px) {
+        margin-left: 25px;
+      }
+      @media (max-width: 1199px) {
+        margin-left: 25px;
+      }
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+    .right.nothing {
+      .content {
+        background-color: none;
+        padding: 0;
+        max-width: 0;
+        min-height: 0;
+        white-space: nowrap;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  .content {
+    background: $CardColor;
+    opacity: 1;
+    border-radius: 10px;
+    max-width: 380px;
+    min-height: 173px;
+    padding: 25px 25px;
+    position: relative;
+    color: $white;
+    margin-left: 75px;
+    margin-bottom: 70px;
+    @media (max-width: 991px) {
+      margin-left: 0;
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+    h2,
+    h4 {
+      font-weight: 600;
+      color: $white;
+      font-family: $Basefont;
+      margin: 0;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      margin-top: 10px;
+      color: #0bd7e7;
+      position: relative;
+      margin-left: 20px;
+      span {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 2px;
+        left: -20px;
+        background: #0bd7e7;
+        top: 12px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: -89px;
+      background: #01002b;
+      border: 2px solid #0bd7e7;
+      top: 73px;
+      border-radius: 50%;
+      z-index: 1;
+      opacity: 1;
+      @media (max-width: 1440px) {
+        left: -89px;
+      }
+      @media (max-width: 1366px) {
+        left: -62px;
+      }
+      @media (max-width: 991px) {
+        display: none;
+      }
+      &:first-child {
+        background-image: url("../../../assets/images/bowled-images/tick.png");
+      }
+    }
+    &.achived {
+      &::after {
+        background-image: url("../../../assets/images/bowled-images/tick.png");
+        background-size: 75px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .last_one {
+    .content {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container_time {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container_time::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+  .right {
+    left: 0%;
+  }
+}

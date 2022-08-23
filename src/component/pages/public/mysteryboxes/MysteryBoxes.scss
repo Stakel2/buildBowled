@@ -1,0 +1,64 @@
+@import '../../../../assets/styles/_var.scss';
+
+p.noMystry_box{
+  color: $light;
+}
+.mystry_box_rowB{
+  margin-bottom: 58px;
+  .mystry_box_rowB--left{
+      .card{
+        background: #2C1001;
+        border-radius: 10px;
+        .card-body{
+          font-size: 16px;
+          text-transform: capitalize;
+          color:$mystryboxTitle;
+
+          .mystry_box_rowB--left_img{
+            min-height: 180px;
+          }
+          
+        }
+        
+      }
+      .col.mystry_box_rowB--left_btns{
+        display: flex;
+        padding:0;
+        justify-content: space-between;
+
+        .btn.btn-primary{
+          min-width: auto;
+          font-size: 14px;
+          min-height: 41px;
+          width: 48%;
+        }
+      }
+  }
+  .mystry_box_rowB--right{
+    @media(max-width:990px){
+      margin-top: 25px;
+    }
+      h2.s-title{
+        color: $white;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+
+      .cPacks_style{
+        margin-bottom: 25px;
+          .card{
+            background: $gradiantBg;
+
+            .card-body{
+              min-height: 135px;
+              text-align: center;
+              color: $blackText;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+            }
+          }
+      }
+  }
+}

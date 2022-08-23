@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="719" viewBox="0 0 1920 719">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7134" data-name="Rectangle 7134" width="1920" height="719" transform="translate(0 1008)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_7088" data-name="Rectangle 7088" width="1342" height="728" transform="translate(426 1008)" fill="#fff"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0bd7e7"/>
+      <stop offset="1" stop-color="#0c201f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_20266" data-name="Group 20266" transform="translate(-7806 -807)">
+    <rect id="Rectangle_7135" data-name="Rectangle 7135" width="1920" height="719" transform="translate(7806 807)" fill="#01001d"/>
+    <g id="Mask_Group_283" data-name="Mask Group 283" transform="translate(7806 -201)" clip-path="url(#clip-path)">
+      <g id="Mask_Group_274" data-name="Mask Group 274" clip-path="url(#clip-path-2)">
+        <path id="Ellipse_8682" data-name="Ellipse 8682" d="M651.573,23.157A627.265,627.265,0,0,1,915.648,71.613c82.4,34.475,157.1,86.035,220.214,150.933C1199.317,287.8,1250.921,366.4,1286.716,454.4c35.9,88.267,55.806,185.748,55.806,288.292s-19.9,200.1-55.806,288.514c-35.8,88.141-87.4,166.947-150.854,232.45-63.112,65.149-137.818,117.006-220.214,151.809a630.615,630.615,0,0,1-522.189-14.13c-78.167-38.059-148.1-91.689-206.5-156.945a727.957,727.957,0,0,1-137.107-225.9,773.6,773.6,0,0,1,0-546.45A731.778,731.778,0,0,1,186.964,245.587c58.4-65.488,128.329-119.4,206.5-157.766A631.938,631.938,0,0,1,651.573,23.157Z" transform="translate(425.739 589.016)" opacity="0.2" fill="url(#radial-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

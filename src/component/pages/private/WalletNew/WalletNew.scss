@@ -1,0 +1,504 @@
+.tabsedit {
+    width: 100%;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    background: #ffffff29;
+
+    .nav-item {
+        width: 50%;
+        text-align: center;
+        padding: 0;
+        border: none;
+
+        .nav-link {
+            width: 100%;
+            color: #fff6;
+            font-size: 18px;
+            font-weight: 600;
+
+            &:hover {
+                border: none;
+                isolation: isolate;
+            }
+        }
+
+        .nav-link.active {
+            color: #01012A;
+            background-color: #FF2B6E;
+            border-color: #FF2B6E;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+        }
+    }
+}
+
+.walletsTa {
+    text-align: center;
+    padding-top: 20px;
+    h2{
+        color: #fff;
+    }
+    p {
+        font-size: 14px;
+        color: #AEAEDC;
+        font-weight: 500;
+        margin: 20px auto;
+    }
+
+    .buttons {
+        margin-bottom: 30px;
+
+        .depos {
+            color: #fff;
+            background: #1d8054;
+            border: 1px solid #1d8054;
+            margin-right: 25px;
+            @media (max-width:600px){
+                min-width: 130px !important;
+                margin-right: 10px;
+                font-size: 14px;
+                padding: 8px !important;
+            }
+
+            &:before {
+                background: #1d8054;
+            }
+        }
+
+        .withd {
+            color: #fff;
+            background: #871f33;
+            border: 1px solid #871f33;
+            margin-right: 25px;
+            @media (max-width:600px){
+                min-width: 130px !important;
+                margin-right: 0 !important;
+                font-size: 14px;
+                padding: 8px !important;
+            }
+
+            &:before {
+                background: #871f33;
+            }
+        }
+    }
+
+    span {
+        color: #0BD7E7;
+        text-decoration: underline;
+        font-size: 14px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+}
+
+.MainViewNft{
+    h2{
+        color: #fff;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+.mainPrice {
+    margin-bottom: 52px;
+    .price {
+        padding-left: 0px;
+        padding-right: 0px;
+            li {
+            padding: 10px 0;
+            border: 1px solid #1E1E41;
+
+            .inrdetails {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3px 24px;
+                @media(max-width:767px) {
+                      padding: 3px 8px;  
+                }
+                .d-flex{
+                    img{
+                        width: 28px;
+                        @media(max-width:767px) {
+                            width: 20px;
+                        } 
+                    }
+                }
+                .balncing {
+                    h6{
+                        color: #fff;
+                        @media(max-width:767px) {
+                            font-size: 13px;
+                        }
+                    }
+                    span {
+                        color: #ffffff70;
+                    }
+
+                    .Pricin {
+                        color: #2DD565;
+                    }
+
+                    .detain {
+                        color: #FF3A3A;
+                    }
+
+                    .StadiumRare {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 250px;
+
+                        h6 {
+                            border-right: 2px solid #ffffff3d;
+                            padding-right: 50px;
+                            font-size: 16px;
+                        }
+
+                        h5 {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .amount {
+                    h6{
+                        color: #fff;
+                        @media(max-width:767px) {
+                            font-size: 13px;
+                        }
+                    }
+                    p {
+                        color: #ffffff70;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        @media(max-width:767px) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+
+
+                .smallStadium {
+                    height: 50px;
+                    border: 1px solid #FF2B6E80;
+                    border-radius: 8px;
+                    padding: 4px;
+                }
+
+                .ViratPixell {
+                    height: 50px;
+                    width: 50px;
+                    border: 1px solid #FF2B6E80;
+                    border-radius: 8px;
+                    padding: 4px;
+                }
+            }
+
+        }
+    }
+}
+
+.MoreIcon {
+    display: flex;
+    justify-content: space-between;
+    width: 65px;
+
+    p {
+        color: #ffffff70;
+        font-weight: 500;
+    }
+}
+
+.ModalDeposit {
+    .modal-content {
+        background-color: #3b3b649e;
+        border: 1px solid #3b3b649e;
+        border-radius: 20px;
+
+        .modal-header {
+            border: none;
+
+            h4 {
+                color: #fff;
+                text-align: center;
+                margin: 0 auto;
+                width: 100%;
+                position: absolute;
+                top: 26px;
+                left: 0;
+            }
+
+            .btn-close {
+                box-sizing: content-box;
+                width: 13px;
+                height: 13px;
+                margin-right: 0;
+                margin-top: 0;
+                padding: .25em .25em;
+                color: #000;
+                background: transparent url("../../../../assets/images/close.svg");
+                border: 0;
+                border-radius: .25rem;
+                opacity: .5;
+            }
+        }
+
+        .modal-body {
+
+            .DepositModal {
+
+                .qrdetails {
+                    text-align: center;
+                    margin: 20px auto;
+                    color: #fff;
+
+                    p {
+                        color: #ffffff82;
+                        margin: 10px auto;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+
+                    h6 {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+
+                .AssetsNetwork {
+                    margin-bottom: 15px;
+
+                    .form-label {
+                        color: #ffffff82;
+                        font-size: 16px;
+                    }
+
+                    .drepedit {
+                        margin-bottom: 80px;
+                    }
+
+                    .dropdown {
+                        .dropdown-toggle {
+                            width: 100%;
+                            background: #181840;
+                            border: 1px solid #181840;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 0 25px;
+                            height: 54px;
+
+                            &::after {
+                                display: inline-block;
+                                margin-left: 0.255em;
+                                vertical-align: 0.255em;
+                                content: "";
+                                border-top: 0.3em solid #ffffff4a;
+                                border-right: 0.3em solid transparent;
+                                border-bottom: 0;
+                                border-left: 0.3em solid transparent;
+                            }
+
+                            &:focus {
+                                box-shadow: none;
+                            }
+                        }
+
+                        .dropdown-menu.show {
+                            width: 100%;
+                            background: #181840;
+
+                            .dropdown-item {
+                                color: #fff;
+
+                                &:hover {
+                                    background: #181840;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .btn-primary {
+                    width: 100%;
+                }
+
+                .addres {
+
+                    .form-label {
+                        color: #ffffff82;
+                        font-size: 16px;
+                    }
+
+                    .form-control {
+                        background: #181840;
+                        height: 60px;
+                        border: 1px solid #181840;
+                        color: #fff;
+                        padding: 0 25px;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+                .balanceAmount {
+                    margin-bottom: 15px;
+
+                    .amountBal {
+                        color: #ffffff82;
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 16px;
+
+                        span {
+                            color: #fff;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .form-control {
+                        background: #181840;
+                        height: 60px;
+                        border: 1px solid #181840;
+                        color: #fff;
+                        padding: 0 25px;
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+                .amountwithPres {
+                    margin-bottom: 60px;
+                    @media (max-width:600px){
+                        margin-bottom: 30px;
+                    }
+                    .btn-group {
+                        width: 100%;
+                        min-width: 100%;
+
+                        .percentage {
+                            min-width: 80px;
+                            margin: 0 10px;
+                            background: #272750;
+                            border-radius: 8px;
+                            border: 1px solid #272750;
+                            height: 42px;
+                            text-align: center;
+                            padding: 0;
+                            @media (max-width:600px){
+                                min-width: 55px;
+                                font-size: 14px;
+                                margin: 0 4px;
+                            }
+                            &:hover::before {
+                                background: #1e1e4f;
+                                border: 1px solid #272750;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .modal-footer {
+            border: none;
+        }
+    }
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background: linear-gradient(90deg, rgb(247, 41, 111) 0%, rgb(55, 2, 150) 93%, rgb(55, 2, 150) 100%);
+    transition: all linear 0.3s;
+}
+
+.hiddSidebar {
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    width: 0px !important;
+    min-width: 0px !important;
+    max-width: 250px !important;
+    display: inline-block !important;
+
+    .SideBar {
+        display: none;
+    }
+
+    @media(max-width:1024px) {
+        opacity: 1;
+        transition: all ease-in-out 0.5s;
+
+        .SideBar {
+            display: block;
+        }
+    }
+}
+
+.showSideBar {
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+
+    @media(max-width:1024px) {
+        opacity: 0;
+        transition: all ease-in-out 0.5s;
+        width: 0px !important;
+        min-width: 0px !important;
+        max-width: 0px !important;
+        display: inline-block !important;
+
+        .SideBar {
+            display: none;
+        }
+    }
+}
+.withdrawSelect{
+    margin: 0px !important;
+    height: 60px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 0px;
+    border-color: #181840 !important;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff !important;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-width: 1.5px;
+    transition: all 0.25s;
+    outline: none !important;
+    box-shadow: none !important;
+    appearance: none;
+    background:#181840 url(../../../../assets/images/arrowBtm_new.svg) 95% 50% no-repeat !important;
+    @media (max-width: 767px) {
+      min-width:100%;
+    }
+    &:focus {
+        background:#181840 url(../../../../assets/images/arrowBtm_new.svg) 95% 50% no-repeat !important;
+        border-color:  #181840 !important;
+        color: #fff !important;
+      }
+    option{
+        background: transparent !important;
+    }
+  }
+  .address{
+      margin-bottom: 15px;
+      p{
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.5);
+          cursor: pointer;
+          margin: 5px auto !important;
+      }
+      span{
+          font-size: 14px;
+          color: rgba(255, 255, 255, 1);
+      }
+  }

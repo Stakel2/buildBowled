@@ -1,0 +1,50 @@
+@import "../../../assets/styles/_themevar.scss";
+
+.social_btn {
+  position: relative;
+  background: linear-gradient(
+    172deg,
+    rgba(51, 51, 112, 1) 9%,
+    rgba(21, 21, 67, 1) 100%
+  );
+  border-radius: 12px;
+  height: 60px;
+  padding: 0 30px;
+  line-height: initial;
+  font-size: 16px;
+  border: none;
+  font-family: $Basefont;
+  position: relative;
+  white-space: nowrap;
+  display: inline-flex;
+  font-weight: 400;
+  letter-spacing: 1px;
+  align-items: center;
+  color: $white;
+  cursor: pointer;
+  @media (max-width: 1660px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 1440px) {
+    height: 55px;
+    padding: 0 15px;
+    font-size: 15px;
+  }
+  @media (max-width: 767px) {
+    height: 55px;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+  &:hover {
+    color: $white;
+    transition: all linear 0.3s;
+  }
+  &:focus {
+    box-shadow: unset;
+    background-color: none;
+    
+  }
+  img {
+    margin-right: 20px;
+  }
+}

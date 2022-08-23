@@ -1,0 +1,112 @@
+@import '../../../assets/styles/_var.scss';
+
+.ca_wrap_style{
+    background: rgba(255,255,255,0.6);
+    padding-bottom: 22px;
+    .ca_wrap_style_img{
+        img{
+            width: 100%;
+        }
+    }
+    .post_desc_style{
+        padding: 38px;
+        p{
+            font-family: $basefont;
+            color: $baseColor;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 0;
+        }
+    }
+    .postInfo_style{
+        padding-left: 38px;
+        padding-right: 38px;
+        .postLogo_style{
+            padding:0px;
+            width: 87px;
+            max-width: 87px;
+            height: 87px;
+            border-radius: 50%;
+        }
+        .postInfo_Text_style{
+            padding-left:34px;
+            .post_auther_text_style{
+                font-family: $basefont;
+                font-size: 24px;
+                font-weight: 700;
+                color: $baseColor;
+                margin-top: 10px;
+            }
+            .post_slug_text_style{
+                font-family: $basefont;
+                font-size: 14x;
+                font-weight: 400;
+                color: $filterTextColor;
+                
+            }
+        }
+       
+    }
+    .cs_footer{
+        background: #EEEEEE;
+        margin-left: 22px;
+        margin-right: 22px;
+        margin-top: 30px;       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        align-items: center;
+        padding:20px 25px;
+        ul.cs_footer_share{   
+            display: flex;        
+            li{
+                display: inline-block;
+                margin-right: 15px;
+                    a{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        text-decoration: none;
+                        color: $filterTextColor;
+                        
+                        span{
+                            width: 31px;
+                            height: 31px;
+                            display: inline-block;
+                            font-size: 0px;
+                            margin-right: 5px;
+                        }
+                        strong{
+                            font-family: $basefont;
+                            font-weight: 400;
+                        }
+                        &.social_like{
+                            span{
+                                background: url(../../../assets/images/icon_like.svg) center no-repeat;
+                            }
+                        }
+                        &.social_share{
+                            span{
+                                background: url(../../../assets/images/icon_loop.svg) center no-repeat;
+                            }
+                        }
+                        &.social_comment{
+                            span{
+                                background: url(../../../assets/images/icon_comment.svg) center no-repeat;
+                            }
+                        }
+                    }
+                
+            }
+        }
+        .cs_footer_upload{
+            width: 31px;
+            height: 31px;
+            display: inline-block;
+            font-size: 0px;   
+            background: url(../../../assets/images/icon_upload.svg) center no-repeat;        
+        }
+
+    }   
+}

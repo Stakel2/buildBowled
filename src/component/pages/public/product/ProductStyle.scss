@@ -1,0 +1,246 @@
+@import '../../../../assets/styles/_var.scss';
+
+.product_wrap_style {
+  position: relative;
+  z-index: 0;
+  @media (max-width: 1600px) {
+    padding-top: 10px;
+  }
+  @media (max-width: 980px) {
+    padding-top: 0;
+  }
+  .product_img_style {
+    img {
+      max-width: 50%;
+    }
+    margin-bottom: 100px;
+    @media (max-width: 1600px) {
+      margin-bottom: 51px;
+    }
+  }
+  .product_details_style {
+    li {
+      font-family: $basefont;
+      font-size: 30px;
+      color: $baseColor;
+      font-weight: 400;
+      margin-bottom: 30px;
+
+      @media (max-width: 1600px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .product_sub_title {
+    font-family: $basefont;
+    font-size: 30px;
+    color: $baseColor;
+    font-weight: 700;
+    margin-bottom: 30px;
+    @media (max-width: 1600px) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  p.product_desc_style {
+    font-family: $basefont;
+    font-size: 30px;
+    color: $lightText;
+    font-weight: 400;
+    margin-bottom: 60px;
+
+    @media (max-width: 1600px) {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  .product_info_right_style {
+    padding-left: 80px;
+    @media (max-width: 1600px) {
+      padding-left: 40px;
+    }
+    @media (max-width: 980px) {
+      padding-left: 15px;
+    }
+    .product_value_style {
+      margin-bottom: 25px;
+      .form-check-label {
+        font-size: 20px;
+        margin-left: 4px;
+      }
+      .col-lg-6 {
+        &:last-child {
+          border-left: 1px solid $tabBorderBottom;
+          padding-left: 35px;
+        }
+
+        h3 {
+          font-family: $basefont;
+          font-size: 30px;
+          color: $baseColor;
+          margin-bottom: 23px;
+
+          @media (max-width: 1600px) {
+            font-size: 20px;
+          }
+        }
+        p.big_text {
+          font-family: $basefont;
+          font-size: 30px;
+          color: $baseColor;
+          font-weight: 700;
+
+          @media (max-width: 1600px) {
+            font-size: 20px;
+          }
+
+          &.light {
+            font-weight: 400;
+          }
+          .coinPrice {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .activity_section {
+    .activity_list_style {
+      padding-left: 15px;
+      padding-right: 15px;
+      > .row {
+        border: 1px solid $tabBorderBottom;
+        margin-bottom: 21px;
+        padding: 25px;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .user_img.col {
+        max-width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        border: 1px solid $tabBorderBottom;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 18px;
+
+        img {
+          width: 126%;
+        }
+      }
+      .user_bid_info.col {
+        flex: 1;
+        h4 {
+          font-family: $basefont;
+          font-size: 20px;
+          color: $baseColor;
+          font-weight: 700;
+        }
+        p {
+          font-family: $basefont;
+          font-size: 20px;
+          color: $lightText;
+          font-weight: 700;
+        }
+      }
+      .user_bid_value.col {
+        position: relative;
+        max-width: 200px;
+        text-align: right;
+        padding-right: 55px;
+
+        h4 {
+          font-family: $basefont;
+          font-size: 20px;
+          color: $baseColor;
+          font-weight: 700;
+        }
+        p {
+          font-family: $basefont;
+          font-size: 20px;
+          color: $lightText;
+          font-weight: 700;
+        }
+        a {
+          font-size: 0px;
+          width: 32px;
+          height: 32px;
+          background: url(../../../../assets/images/icon_screenshot.svg)
+            no-repeat;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  .purchase_history_style {
+    margin-top: 180px;
+    margin-bottom: 100px;
+
+    h2.sub-title {
+      margin-bottom: 50px;
+    }
+    .purchaseHistroy_row_style {
+      > .row {
+        border-bottom: 1px solid $tabBorderBottom;
+        padding: 25px;
+        padding-left: 0px;
+        align-items: center;
+        .user_img.col {
+          max-width: 47px;
+          height: 47px;
+          border-radius: 50%;
+          border: 1px solid $tabBorderBottom;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 80px;
+
+          img {
+            width: 126%;
+          }
+        }
+        .purchased_info_item.col {
+          font-family: $basefont;
+          font-size: 24px;
+          color: $baseColor;
+          font-weight: 700;
+          flex: 1;
+        }
+        .purchased_date_item.col {
+          max-width: 200px;
+          font-family: $basefont;
+          font-size: 24px;
+          color: $lightText;
+          font-weight: 700;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .placeBidForm_style {
+    padding-bottom: 45px;
+  }
+
+  .product-note {
+    background-color: #63646421;
+    border-radius: 0px;
+  }
+}
+.buyOptionsRadio {
+  display: grid;
+}

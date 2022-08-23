@@ -1,0 +1,121 @@
+@import '../../../assets/market/styles/_var.scss';
+
+.inviteSection.container{
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1) url(../../../assets/market/invitebg.png) 100% center no-repeat;
+    border-radius: 20px;
+    padding:57px;
+    margin-bottom: 78px;
+ 
+    @media(max-width:980px){
+        .container{
+            position: relative;
+            overflow: hidden;
+        &:before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            left: 0;
+            top: 0;
+        }
+        .row{
+            position: relative;
+            z-index: 1;
+        }
+    }
+        
+    }
+    @media(max-width:768px){
+        background-size: 50%;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+        color: $textWhite;
+
+        span{
+            color: $highlightColor;
+        }
+    }
+    p.subTitle{
+        color: $textWhite08;
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 34px;
+
+        @media(max-width:990px){
+            padding-right: 150px;
+
+            br{
+                display: none;
+            }
+        }
+    }
+    .shareBlock{
+        display: flex;
+        background: #111131;
+        border-radius: 15px;
+        height: 64px;
+        max-width: 763px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 25px;
+        align-items: center;
+        position: relative;
+
+        p.linkStyle{
+            flex: 1;
+            color: $textWhite05;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 0;
+
+            @media(max-width:768px){
+                font-size: 14px;
+            }
+        }
+        .btns_shareCopy{
+            display: flex;
+            margin-top: 23px;
+                @media(max-width:382px){
+                    position: absolute;
+                    right: 0;
+                    background: #111131;
+                }
+            li{
+                position: relative;
+                margin: 0 25px;
+                @media(max-width:442px){
+                    margin: 0 10px;
+                }
+                &:before{
+                    position: absolute;                    
+                    content: '';
+                    background: rgba(255, 255, 255, 0.1);
+                    width: 1px;
+                    height: 26px;
+                    display: block;
+                    left:-25px;
+                    @media(max-width:442px){
+                        left: -11px;
+                    }
+                }
+            }
+            .btn-copy{
+                width: 25px;
+                height: 25px;
+                background: url(../../../assets/market/images/btn_copy.svg) no-repeat;
+                border:0px;
+            }
+            .btn-share{
+                width: 25px;
+                height: 25px;
+                background: url(../../../assets/market/images/icon_share.svg) no-repeat;
+                border:0px;
+            }
+        }
+    }
+}

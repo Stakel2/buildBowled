@@ -1,0 +1,40 @@
+@import '../../../../assets/styles/_var.scss';
+
+.main_layout.layout_contact{
+    padding-top: 50px;
+    @media(max-width:1200px){
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+}
+
+.subtitle-contact{
+    font-size: 50px;
+    font-weight: 700;
+    color: $baseColor;
+    @media(max-width:1600px){
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
+
+.contact-horizontal-inputs{
+    .chi_left{
+        padding-right: 45px;
+
+        @media(max-width:990px){
+            padding-right: 10px;
+        }
+    }
+    .chi_right{
+        padding-left: 45px;
+        @media(max-width:990px){
+            padding-left: 10px;
+        }
+    }
+}
+.contact_btn{
+    margin-top: 25px !important;
+}

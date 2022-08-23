@@ -1,0 +1,329 @@
+@import "../../../../assets/styles/_var.scss";
+
+.slider_style.container {
+  padding-left: 0px;
+  padding-right: 0px;
+ 
+  h2 {
+    font-family: $titlefont;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 37px;
+    color: $black;
+    @media (max-width: 1600px) {
+      font-size: 25px;
+      margin-bottom: 35px;
+    }
+  }
+  .slick-prev {
+    left: -35px;
+    width: 35px;
+    height: 40px;
+    @media (max-width: 767px) {
+      left: -20px;
+      width: 20px;
+      height: 20px;
+    }
+    &:before {
+      content: "";
+      background: url("../../../../assets/images/home/drop_slider_arrow_left.svg") no-repeat;
+      width: 33px;
+      height: 45px;
+      display: block;
+
+      @media (max-width: 768px) {
+        width: 33px;
+        height: 30px;
+        background-size: 20px 20px;
+      }
+    }
+  }
+  .slick-next {
+    right: -48px;
+    width: 35px;
+    height: 40px;
+   
+    @media (max-width: 767px) {
+      width: 20px;
+      height: 20px;
+      right:-20px;
+    }
+    &:before {
+      content: "";
+      background: url("../../../../assets/images/home/drop_slider_arrow_right.svg") no-repeat;
+      width: 33px;
+      height: 45px;
+      display: block;
+      @media (max-width: 768px) {
+        width: 33px;
+        height: 30px;
+        background-size: 20px 20px;
+      }
+    }
+  }
+}
+
+.featureBrand_item {
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.fet_art_cardStyle.col,
+.fet_art_cardStyle.col-lg-4 {
+  cursor: pointer;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  .artist_links {
+  }
+  .art_banner {
+    height: 204px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+
+    @media (max-width: 1600px) {
+      height: auto;
+      padding-bottom: 43%;
+    }
+  }
+  .artImg {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    width: 122px;
+    max-width: 122px;
+    height: 122px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    bottom: -60px;
+    border: 2px solid #fff;
+    img {
+      width: 126%;
+    }
+    @media (max-width: 1600px) {
+      width: 80px;
+      max-width: 80px;
+      height: 80px;
+      bottom: -40px;
+
+      img {
+        width: 156%;
+      }
+    }
+  }
+  .artist_description {
+    position: relative;
+    padding-top: 90px;
+    box-sizing: border-box;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+    min-height: 402px;
+
+    @media (max-width: 1200px) {
+      padding-top: 30px;
+      padding-left: 25px;
+      padding-right: 25px;
+      min-height: auto;
+    }
+
+    &.lessPadding {
+      padding-top: 40px;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      right: 0px;
+      bottom: 0px;
+      width: 144px;
+      height: 144px;
+      border-right: 2px solid $textorange;
+      border-bottom: 2px solid $textorange;
+    }
+    h3 {
+      font-family: $basefont;
+      font-size: 28px;
+      font-weight: 700;
+      color: $baseColor;
+      margin-bottom: 0px;
+      border-bottom: 2px solid $textorange;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      min-height: 75px;
+      @media (max-width: 1700px) {
+        font-size: 22px;
+        min-height: 70px;
+      }
+    }
+    p {
+      font-family: $basefont;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 400;
+      color: $baseColor;
+      margin-bottom: 0px;
+
+      @media (max-width: 1600px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.getStartedItem {
+  .featureBrand_item {
+  }
+  .getStartedItem_desc {
+    padding-left: 45px;
+    padding-right: 45px;
+    h3 {
+      font-family: $basefont;
+      font-size: 25px;
+      font-weight: 700;
+      color: $baseColor;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+      @media (max-width: 1600px) {
+        font-size: 22px;
+      }
+    }
+    p {
+      font-family: $basefont;
+      font-size: 16px;
+      font-weight: 400;
+      color: $baseColor;
+      margin-bottom: 0px;
+      text-align: left;
+      @media (max-width: 1600px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.slick-slider {
+  img {
+    width: 100%;
+    &.brandImgStyle {
+      border: 2px solid #000;
+    }
+  }
+
+  .slick-dots {
+    margin-bottom: -80px;
+    @media (max-width: 1600px) {
+      margin-bottom: -52px;
+    }
+    li button {
+      @media (max-width: 1200px) {
+        width: 8px;
+        height: 8px;
+        margin: 0 2px;
+      }
+      &:before {
+        font-size: 20px;
+        @media (max-width: 1200px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.container.categorys_container {
+  max-width: 1400px;
+}
+
+
+.FeaturedSlider{
+    .slick-list{
+      border: 1px solid $sepratorCard; 
+    }
+   .slick-slide{
+     padding: 20px;
+     border-right: 1px solid $sepratorCard;
+   }
+}
+
+.abs_left_lines{
+  position: relative;
+ 
+
+  &:before{
+    position: absolute;
+    content: '';
+    width: 238px;
+    left: 0;
+    height: 100%;
+    background: url(../../../../assets/images/home/abs-left_1.png) left top no-repeat;  
+    z-index: -1;  
+  }
+}
+.abs_left_solid{
+  position: relative;
+
+  &:before{
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 238px;
+    height: 100%;
+    background: url(../../../../assets/images/home/abs_left_2.png) left top no-repeat;   
+    z-index: -1; 
+  }
+}
+
+.abs_right_lines{
+  position: relative;
+ 
+
+  &:before{
+    position: absolute;
+    content: '';
+    width: 238px;
+    right: 0;
+    bottom:0px;
+    height: 100%;
+    background: url(../../../../assets/images/home/abs-right_1.png) left top no-repeat; 
+    z-index: -1;   
+  }
+}
+.abs_right_solid{
+  position: relative;
+  
+
+  &:before{
+    position: absolute;
+    right: 0;
+    bottom:0px;
+    content: '';
+    width: 238px;
+    height: 100%;
+    background: url(../../../../assets/images/home/abs_right_2.png) left top no-repeat;    
+    z-index: -1;
+  }
+}
+
+
+.blog_wrap{
+
+  h2.blogTitle{
+    font-size: 52px;
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 25px;
+    @media(max-width:1400px){
+        font-size: 32px;
+    }
+  }
+  
+}
+

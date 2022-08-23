@@ -1,0 +1,57 @@
+@import '../../../assets/styles/_var.scss';
+
+.addSocialLinkWrap{
+    background: $socLinkBg;
+    border:1px solid $socLinkBorder;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    @media(max-width:990px){
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-right: 16px;
+    }
+    .social_link_left_column{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .as_iconTitle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .addSocialLink_icon{
+        width: 72px;
+
+        img{
+            filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        }
+
+        @media(max-width:990px){
+            width: 40px;
+            img{
+                width: 30px;
+            }
+        }
+
+    }
+    .addSocialLink_text{
+        font-family: $basefont;
+        color: $baseColor;
+        font-size: 1.563rem;
+        font-weight: 700;
+        @media(max-width:990px){
+            font-size: 1rem;
+        }
+    }
+    .addSocialRight_text{
+        font-family: $basefont;
+        color: $lightText;
+        font-size: 1.063rem;
+        font-weight: 400;
+    }
+}
+.socialInput_block{
+    padding-right: 0px;
+}

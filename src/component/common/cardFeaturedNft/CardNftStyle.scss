@@ -1,0 +1,135 @@
+@import '../../../assets/styles/_var.scss';
+
+.featuredNftCard.card{
+    border-radius: 0px;
+    border:0px;
+    background-color: transparent;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    cursor: pointer;
+
+   
+    
+    .featuredNftCard_img.card-header{
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center;
+        border:0px;
+        border-radius: 0px;
+        padding:0px;
+        min-height: 250px;
+        max-height: 250px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 100%;
+        }
+
+    }
+    .card-body{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+       
+        .col{
+            &:nth-child(1){
+                h4{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $white;
+                    text-transform: capitalize;
+                }
+                h5{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $white;
+                }
+            }
+            &:nth-child(2){
+                text-align: right;
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $textColor-70; 
+                    margin-bottom: 0;
+                    text-align: right;   
+                    
+                    img{
+                        margin-left: 5px;
+                        width: 18px;
+                    }
+                }
+            }
+        }
+        &.drop_card_style{
+            background: $white;
+            text-align: center;
+            padding-left: 25px;
+            padding-right: 25px;
+            min-height: 130px;
+            position: relative;
+            .col{
+                &:nth-child(1){
+                    h4{
+                        color: $blackText;
+                    }
+                    h5{
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $light;
+                    }
+                }                
+            }
+        }
+    }
+    .card-footer{
+        padding-left: 0;
+        padding-right: 0;
+        border-top: 1px solid $sepratorCard;
+        padding-top: 10px;
+       
+        .col{
+            &:nth-child(1){
+                border-right: 1.5px solid $sepratorCard;
+                max-width: 120px;
+                flex-basis: auto;
+                h4{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $white;  
+                    margin-top: 2px;
+                    margin-bottom: 4px; 
+                }
+                h5{
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: $textColor-70; 
+                    margin-bottom: 0;  
+                }
+                h6{
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: $textColor-70; 
+                    margin-bottom: 0;  
+                }
+            }
+            &:nth-child(2){
+                h6{
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: $textColor-70; 
+                    margin-bottom: 0;  
+                }
+            }
+        }
+        &.drop_bg_footer{
+            border-top: 0px;
+            background: $white;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 0px;
+        }
+    }
+}

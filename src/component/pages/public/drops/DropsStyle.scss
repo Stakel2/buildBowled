@@ -1,0 +1,93 @@
+@import "../../../../assets/styles/_var.scss";
+
+.draps_page{
+  padding-bottom: 80px;
+}
+.dropsInfo_section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h1{
+    color: $white;
+  }
+
+    p{
+      color: $light;
+    }
+  @media (max-width: 768px) {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+}
+.banner_text {
+  position: absolute;
+  margin: 0 auto;
+  z-index: 4;
+  top: 50%;
+  left: 0;
+  right: 0;
+  max-width: 1060px;
+  text-align: center;
+  transform: translateY(-50%);
+
+  h1 {
+    font-family: $basefont;
+    font-size: 50px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 0;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    font-family: $basefont;
+    font-size: 35px;
+    font-weight: 400;
+    color: $white;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+}
+.dropTopLessPadding {
+  margin-top: 0px;
+}
+
+.filterBlockChainStyle{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: -45px;
+  position: relative;
+  z-index: 1;
+  @media(max-width:660px){
+    margin-bottom: 15px; 
+    padding-right: 15px;
+  }
+  h4{
+    font-size: 12px;
+    color: $light;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+
+  .filter_input_style {
+    max-width: 180px;
+  }
+}
+
+@media(max-width:660px){
+.drops_cardGallery{
+  .heading_gallery.row{
+    display: none;
+  }
+}
+}
+
+.exColl_title{
+  display: none;
+
+  @media(max-width:660px){
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    color: $white;
+  }
+}

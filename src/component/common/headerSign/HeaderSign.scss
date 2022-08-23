@@ -1,0 +1,28 @@
+@import "../../../assets/styles/_var.scss";
+
+.headerSignStyle {
+  text-align: center;
+  padding-top: 55px;
+  @media(max-width:1200px){
+    padding-top: 20px;
+  }
+  .avatar_img_style {
+    width: 167px;
+    height: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .titleStyle {
+    font-family: $basefont;
+    font-size: 34px;
+    font-weight: 400;
+    color: $baseColor;
+    @media(max-width:1600px){
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+  }
+}

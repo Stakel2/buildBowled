@@ -1,0 +1,37 @@
+@import "../../../assets/styles/_var.scss";
+
+.brdcum_Style {
+  .breadcrumb {
+    font-size: 30px;
+    font-weight: 700;
+    @media (max-width: 1440px) {
+      font-size: 24px;
+    }
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+    .breadcrumb-item {
+      a {
+        text-decoration: none;
+        color: $light;
+      }
+      &.active {
+        color: $baseColor;
+      }
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 20px;
+    @media (max-width: 767px) {
+      padding-left: 15px;
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 20px;
+    color: $light;
+    content: var(--bs-breadcrumb-divider, ">");
+    @media (max-width: 767px) {
+      padding-right: 15px;
+    }
+  }
+}

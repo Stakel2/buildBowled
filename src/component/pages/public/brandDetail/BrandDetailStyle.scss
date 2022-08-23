@@ -1,0 +1,15 @@
+@import '../../../../assets/styles/_var.scss';
+
+.brandArtist_BlockStyle{
+    padding-top: 80px;
+
+   @media(max-width:1200px){
+        padding-top: 40px;
+   }
+}
+.brand_tabs_wrapper{
+     margin-left: 200px;
+     margin-right: 200px;
+     margin-top: 50px;
+}
+

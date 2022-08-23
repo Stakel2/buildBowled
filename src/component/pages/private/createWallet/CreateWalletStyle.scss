@@ -1,0 +1,62 @@
+@import '../../../../assets/styles/_var.scss';
+
+.editProfile_layout{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media(max-width:1200px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media(max-width:768px){
+        padding-top: 0px;        
+    }
+    .editContainerStyle{
+        max-width: 1348px;
+    }
+}
+p.label_left_text_style{
+    margin-top: 25px;
+    font-family: $basefont;
+    color: $baseColor;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.edit_profile_btnStyle{
+    margin-top: 80px !important;
+}
+.uploadfileStyle{
+    border:2px solid $inputBorder;
+    border: 2px dashed #000 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 200px !important;
+    span.kCudqJ{
+        font-size: 20px;
+        text-align: center;
+        width:100%;
+        color: $baseColor;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 30px;
+        text-decoration: none;
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+    svg{
+        display: none;
+    }
+    .file-types{
+        display: none;
+    }   
+}
+.addLinkHeading{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media(max-width:990px){
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+

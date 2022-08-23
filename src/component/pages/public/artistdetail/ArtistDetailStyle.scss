@@ -1,0 +1,85 @@
+@import "../../../../assets/styles/_var.scss";
+
+.art_wrap {
+  padding-bottom: 100px;
+}
+.followandMemberButton {
+  display: flex;
+  flex-direction: row;
+
+  li {
+    margin-right: 25px;
+    .btn.btn-primary {
+      width: 274px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.feeds_section {
+  padding-bottom: 45px;
+
+  .feeds_section_left {
+    background: $feedbg;
+    max-width: calc(100% - 613px);
+    margin-right: 27px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 25px;
+
+    .feeds_section_left_header {
+      display: flex;
+      flex-direction: row;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      justify-content: space-between;
+      border-bottom: 2px solid $baseColor;
+      align-items: center;
+
+      h2 {
+        font-family: $basefont;
+        text-transform: uppercase;
+        font-size: 34px;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .feeds_section_right {
+    max-width: 586px;
+  }
+}
+
+.commingSoon {
+  width: 100%;
+  text-align: "center";
+}
+
+.details_support_btns{
+  display: flex;
+  justify-content: center;
+  margin-top: 81px;  
+  flex-wrap: wrap;
+
+  li{
+    margin-left: 7px;
+    margin-right: 7px;
+
+    @media(max-width:876px){
+      margin-bottom: 15px;
+    }
+
+    .btn.btn-default{
+      height: 50px;
+      min-width: 262px;
+      list-style: none;
+
+      span{
+        line-height: 14px;
+        white-space: nowrap;
+      }
+    }
+  }
+}

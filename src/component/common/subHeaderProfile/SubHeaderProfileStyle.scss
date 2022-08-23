@@ -1,0 +1,71 @@
+@import "../../../assets/styles/_var.scss";
+@import "../../../assets/styles/_themevar.scss";
+
+.subHeaderProfile {
+    position: relative;
+    margin-top: 80px;
+  .subHeaderProfile_img {
+    width: 120px;
+    max-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    padding: 0;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 980px) {
+      width: 150px;
+      max-width: 150px;
+      height: 150px;
+      margin-top: -80px;      
+    }
+    @media (max-width: 620px) {
+      width: 80px;
+      max-width: 80px;
+      height: 80px;
+      margin-top: -40px;
+      margin-left: auto;
+      margin-right: auto;
+
+      img {
+        width: 146%;
+      }
+    }
+  }
+  .subHeaderProfile_content {
+    h2.subHeaderProfile_content_title {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 15px;
+      margin-bottom: 14px;
+      color: $LinkColor;
+      text-align: center;
+      @media (max-width: 900px) {
+        margin-top: 10px; font-size: 16px;
+      }
+      .edit_profile_icon{
+        margin-left: 10px;
+      }
+    }
+    p.subHeaderProfile_content_subtitle {
+      color: $textColor-70;
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 400;
+      text-align: center;
+
+      @media (max-width: 1600px) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

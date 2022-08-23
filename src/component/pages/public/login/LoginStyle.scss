@@ -1,0 +1,148 @@
+@import "../../../../assets/styles/_themevar.scss";
+
+.link_text{
+    color: $LinkColor; transition: all ease 0.5s;
+    &:hover{
+      color: $baseColor; transition: all ease 0.5s;
+    }
+  }
+  
+.otp_area{
+  label{
+    font-size: 14px;
+    color: $white;
+    opacity: 0.4;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+.forgot_pass{
+  .rg_title{
+    p{
+      a{
+        color: $LinkColor;
+      }
+    }
+  }
+  .forgot_email{
+    position: relative;
+    .form-control{
+      padding-right: 100px;
+    }
+    .get_otp_link{
+      color: $LinkColor; position: absolute;
+      right: 20px;
+      top: 50px;
+      @media (max-width:1440px){
+    top: 47px;
+    font-size: 15px;
+      }
+      @media (max-width:767px){
+        right: 12px;
+    top: 48px;
+    font-size: 14px;
+      }
+    }
+  }
+}
+.text{
+  color: $white;
+}
+.op-5{
+  opacity: 0.5; font-size: 14px;
+}
+.btn_f {
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+  .react-tel-input  {
+    height: 60px;
+    border-radius: 0px;
+    border-color: $fieldBorder;
+    font-family: $Basefont;
+    background: $fieldBg;
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+    border-radius: 10px;
+    border-width: 1.5px;
+    transition: all 0.25s;
+    outline: none !important;
+    box-shadow: none !important;
+    padding-left: 15px;
+    .flag-dropdown{
+      background: transparent !important;
+      border: 0px !important;
+      .selected-flag{
+        background: transparent !important;
+        &:hover, &:focus{
+          background: transparent !important;
+          border: 0px !important;
+          }
+      }
+    }
+    input{
+      background: transparent !important;
+      border: 0px !important;
+      height: 60px !important;
+      border-radius: 0px !important;
+      font-size: 14px !important;
+      font-weight: 400 !important;
+      color: $white !important;
+      border-radius: 10px;
+      &:hover, &:focus{
+        color: $white !important;
+        box-shadow: 0 0 0 0 #000 !important;
+      }
+      
+    }
+    .invalid-number-message{
+      font-size: 14px !important;
+      color: #ff2b6e !important;
+      margin-top: 4px;
+      left: 0px !important;
+      top: auto !important;
+      background: transparent !important;
+      bottom: -35px !important;
+    }
+    @media (max-width:600px){
+      padding-left: 15px !important;
+      font-size: 13px !important;
+      padding-right: 15px !important;
+    }
+     &:focus {
+      background: $fieldBg;
+      border-color: $baseColor;
+      color: $white;
+    }
+    @media (max-width: 1600px) {
+      height: 51px;
+    }
+    @media (max-width: 1440px) {
+      padding-left: 20px;
+    }
+  }
+
+.country-list {
+  background: #01012a !important;
+  .search{
+    background: #01012a !important;
+  }
+  li{
+    .country-name, .dial-code{
+      color: #fff !important;
+    }
+    &.highlight, &:hover{
+      background: #01012a !important;
+    }
+  }
+
+}
+.get_phone_otp{
+  top:15px !important
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,QAAQ,EAAE,MAAM;CACnB;;AACD,AAAA,cAAc,CAAA;EACV,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,IAAI,EAAE,GAAG;EACT,GAAG,EAAC,GAAG;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,mBAAgB;EAC5B,QAAQ,EAAE,MAAM;CACnB",
+    "sources": [
+        "LoaderAnimatedStyle.scss"
+    ],
+    "names": [],
+    "file": "LoaderAnimatedStyle.css"
+}

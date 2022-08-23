@@ -1,0 +1,53 @@
+@import "../../../assets/styles/_var.scss";
+
+.cardRefferalsWrap {
+  margin-bottom: 6%;
+  .card.cardRefferals {
+    border-radius: 10px;
+    background: transparent;
+    border:1px solid rgba(255,255,255,0.2) !important;
+    border: none;
+    .card-body {
+      padding: 16px;
+      
+      img {
+        @media (max-width: 1366px) {
+          max-width: 45px;
+        }
+      }
+      h4 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        color: $white;
+        margin-bottom: 0;
+        @media (max-width: 1480px) {
+          font-size: 15px;
+        }
+        strong {
+          display: block;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color: $white;
+        @media (max-width: 1480px) {
+          font-size: 18px;
+        }
+      }
+      button {
+        min-width: 130px;
+        min-height: 42px;
+      }
+    }
+  }
+  p {
+    color: #747474;
+  }
+  .f-20 {
+    font-size: 20px;
+  }
+}

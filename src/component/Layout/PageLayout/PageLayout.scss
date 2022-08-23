@@ -1,0 +1,22 @@
+@import "../../../assets/styles/_var.scss";
+.layoutStyle {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  height: 100%;
+
+  @media (max-width: 1024px) {
+    overflow-x: hidden;
+  }
+  .layoutInner {
+    flex: 1 0 auto;
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.borderClass {
+  img {
+    border: 2px solid $baseColor;
+  }
+}

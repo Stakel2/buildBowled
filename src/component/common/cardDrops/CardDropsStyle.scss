@@ -1,0 +1,126 @@
+@import '../../../assets/styles/_var.scss';
+.cardDrop_style.card{
+    border-radius: 0px;
+    background: transparent;
+    border:1px solid $sepratorCard;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    transition: all .35s;
+    
+
+    &:hover{
+        border:1px solid $hovercolor;
+    }
+    .card-header{
+        background: transparent;
+        padding: 0;
+        border:0px;
+
+        img{
+            width: 100%;
+            min-height: 230px;
+            object-fit: cover;
+            // height: auto;
+        }
+    }
+    .card-body{
+        background: $white;
+        text-align: center;
+        border:0px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 18px;
+        padding-right: 18px;
+        min-height: 180px;
+        .card-title.h5{
+                font-size: 16px;
+                font-weight: 500;
+                color: $black;
+        }
+        p{
+            &.t-small.card-title{
+                font-size: 12px;
+                font-weight: 500;
+                color: $light;
+            }
+            &.card-text{
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                color: $light;
+            }
+            &.t-small.card-text{
+                
+            }
+        }
+    }
+    .card-footer{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 16px;
+        .row{
+            .col{
+                &:nth-child(1){
+                    border-right: 1.5px solid $sepratorCard;
+                    padding-left: 0;
+                    display: flex;
+                    align-items: center;
+                    max-width: 100px;
+                    flex-basis: auto;
+                    @media(max-width:1280px){
+                        max-width: 60px;
+                        padding-right: 0;
+                    }
+                        p{
+                            font-size: 16px;
+                            font-weight:500;
+                            color: white;
+                            margin-bottom: 0;
+
+                        }        
+                }
+                &:nth-child(2){
+                    padding-left: 23px;
+                        p{
+                            font-family: $basefont;
+                            font-size: 12px;
+                            color: $textColor-70;
+                            font-weight: 500;
+                            margin-bottom: 0;
+                        }                      
+                }
+            }
+        }
+        
+    }
+}
+
+
+ul.timeDetails{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        strong{
+            font-family: $basefont;
+            font-size: 12px;
+            color: $white;
+            font-weight: 500;
+            margin-bottom: 0; 
+        }
+        span{
+            font-family: $basefont;
+            color: $textColor-70;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 0; 
+        }
+    }
+}

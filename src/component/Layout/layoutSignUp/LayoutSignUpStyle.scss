@@ -1,0 +1,150 @@
+@import "../../../assets/styles/_var.scss";
+@import "../../../assets/styles/_themevar.scss";
+
+.signup_section {
+  position: relative;
+  background-image: url("../../../assets/images/bowled-images/fade_logo.svg");
+  background-repeat: no-repeat;
+  background-position: top 85px right 180px;
+  background-size: 120px;
+  @media (max-width: 767px) {
+    background-position: top 60px right 20px;
+    background-size: 75px;
+  }
+  .manage_layout {
+    padding-top: 115px;
+    padding-left: 200px;
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    @media (max-width: 1600px) {
+      padding-top: 103px;
+      padding-left: 150px;
+    }
+    @media (max-width: 1440px) {
+      padding-top: 55px;
+      padding-left: 65px;
+    }
+    @media (max-width: 1199px) {
+      padding-top: 130px;
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .layout_footer {
+      display: flex;
+      color: $white;
+      font-size: 14px;
+      align-items: center;
+      margin: 15px 0 15px;
+      justify-content: center;
+      max-width: 760px;
+      @media (max-width: 1440px) {
+        max-width: 690px;
+      }
+      @media (max-width: 1199px) {
+        max-width: 100%;
+      }
+      @media (max-width: 767px) {
+        font-size: 13px;
+        display: block;
+        margin: 30px 0 15px;
+      }
+      p {
+        font-size: 14px;
+        opacity: 0.5;
+        margin-bottom: 0;
+        @media (max-width: 767px) {
+          text-align: center;
+        }
+      }
+      .footer_links {
+        @media (max-width: 767px) {
+          text-align: center;
+        }
+        a {
+          color: $white;
+          opacity: 0.5;
+          &:hover {
+            color: $baseColor;
+            opacity: 1;
+          }
+        }
+      }
+      span.pipeline {
+        margin: 0 40px;
+        opacity: 0.5;
+        @media (max-width: 1600px) {
+          margin: 0 20px;
+        }
+        @media (max-width: 767px) {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  .register_bg {
+    background-image: url(../../../assets/images/bowled-images/register_bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    @media (max-width: 1199px) {
+      height: auto;
+      background-image: none;
+    }
+  }
+}
+h1.signup_title {
+  @media (max-width: 990px) {
+    min-height: 65px;
+  }
+  a {
+    font-family: $basefont;
+    position: absolute;
+    padding-left: 40px;
+    left: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $white;
+    text-decoration: none;
+    transition: all 0.55s;
+    &:before {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      content: "";
+      width: 31px;
+      height: 25px;
+      background: url(../../../assets/images/signup/back_icon.svg) no-repeat;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.bowled_logo {
+  position: absolute;
+  left: 100px;
+  top: 32px;
+  @media (max-width: 1440px) {
+    left: 55px;
+    top: 35px;
+  }
+  @media (max-width: 767px) {
+    position: static;
+    display: inline-block;
+    margin: 20px 0 0 15px;
+    img {
+      width: 150px;
+    }
+  }
+}
+.manage_layout_setup{
+  min-height: auto !important;
+}

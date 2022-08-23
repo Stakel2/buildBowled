@@ -1,0 +1,46 @@
+body {
+    padding-top: 0 !important;
+
+    .signup_section {
+        .SidebarCo {
+            background-size: cover;
+            background-position: top center;
+            // min-height: 100%;
+            background-repeat: no-repeat;
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            background: #ffffff30 0% 0% no-repeat padding-box;
+            // padding: 20px 20px;
+            width: 100%;
+            max-width: 317px;
+
+            @media(max-width:1250px) {
+                max-width: 250px;
+            }
+        }
+    }
+
+    .WalletCon {
+        padding: 20px 140px 40px 20px;
+        color: #fff;
+
+    }
+}
+
+.mainboxnew {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    min-height: 100vh;
+
+    h2 {
+
+        padding: 0 10px;
+    }
+}
+
+.row {
+    margin: 0;
+}

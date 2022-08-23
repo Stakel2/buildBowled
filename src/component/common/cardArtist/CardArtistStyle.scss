@@ -1,0 +1,107 @@
+@import '../../../assets/styles/_var.scss';
+
+.artist_links{
+    text-decoration: none;
+}
+.artist_block{
+   
+    .artist_block_header{
+        text-align: center;
+        padding-bottom: 45px;
+        padding-top: 120px;
+        h2{
+            font-size: 34px;
+            color: $baseColor;
+            font-weight: 400;
+        }
+
+    }
+    .artist_gallery{
+        border:1px solid $sepratorCard;
+        border-top: 0px;
+        border-left: 0px;
+        .artist_gallery_item{
+            border:1px solid $sepratorCard;
+            border-right:0px;
+            border-bottom: 0px;
+            padding:16px;
+            .art_cardStyle{
+                padding-left: 12px;
+                padding-right: 12px;
+                background: $baseColor;
+                .art_banner{
+                    height: 242px;
+                    background-size: cover !important;
+                    background-position: center !important;
+                    position: relative;
+
+                    @media(max-width:1600px){
+                        height: auto;
+                        padding-top: 49%;
+                    }
+
+                    .artImg{
+                        position: absolute;
+                        margin: 0 auto;
+                        left:0px;
+                        right: 0px;
+                        bottom:-29px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 59px;
+                        max-width: 59px;
+                        height: 59px;
+                        border-radius: 50%;
+                        border:2px solid $white;
+                        overflow: hidden;
+                        img {
+                            width: 186%;
+                          }
+                        @media(max-width:1600px){
+                            width: 80px;
+                            max-width: 80px;
+                            height: 80px;
+                            bottom: -40px;
+                      
+                            img {
+                              width: 156%;
+                            }
+                          }
+                    }
+                }
+               
+                .art_info{
+                    padding-top: 45px;
+                    text-align: center;
+                    min-height: 145px;
+                    h3.art_title{
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding-bottom: 11px;
+                        
+                        color: $blackText;
+                        @media(max-width:1700px){
+                            font-size: 14px;
+                            
+                          }
+                    }
+                    p.art_desc{
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: $light;
+                        font-weight: 400;
+                    }
+                }
+               
+            }
+            
+        }
+       
+    }
+    
+}
+
+
+
+

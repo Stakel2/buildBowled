@@ -1,0 +1,109 @@
+@import "../../../assets/styles/_themevar.scss";
+.stylish_btn {
+  position: relative;
+  font-size: 17px;
+  border: none;
+  color: $LinkColor;
+  font-family: $Basefont;
+  white-space: nowrap;
+  font-weight: 500;
+  padding: 0;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  transition: all ease 0.6s;
+  -webkit-transition: all ease 0.6s;
+  text-decoration: none !important;
+  cursor: pointer;
+  @media (max-width: 1199px) {
+    margin: auto;
+  }
+  @media (max-width: 767px) {
+    font-size: 15px;
+  }
+
+  &:hover {
+    .btn_text {
+      color: $baseColor;
+      transition: all ease 0.6s;
+      -webkit-transition: all ease 0.6s;
+      font-weight: 500;
+   
+      &:hover {
+        transition: all ease 0.6s;
+        -webkit-transition: all ease 0.6s;
+      }
+    }
+  }
+
+  .the-arrow {
+    position: relative;
+    width: 80px;
+    border: 2px solid $LinkColor;
+    border-radius: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s;
+    margin-left: 60px;
+    @media (max-width: 767px) {
+      width: 60px;
+      height: 40px;
+      margin-left: 25px;
+    }
+    .shaft {
+      width: 65px;
+      transition-delay: 0.2s;
+      background-color: $LinkColor;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: all ease 0.6s;
+      -webkit-transition: all ease 0.6s;
+      transition-delay: 0;
+      will-change: transform;
+      left: -33px;
+      @media (max-width: 767px) {
+        width: 40px;
+        left: -15px;
+      }
+      &::after,
+      &::before {
+        background-color: $LinkColor;
+        content: "";
+        display: block;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10px;
+        transition: all 0.4s;
+        transition-delay: 0;
+        transform-origin: bottom right;
+        transform: rotate(-40deg);
+      }
+      &::before {
+        transform: rotate(40deg);
+      }
+    }
+  }
+  &:hover {
+    .the-arrow {
+      // margin-left: 20px;
+      transition: all 0.4s;
+      border: 2px solid $baseColor;
+    }
+    .shaft {
+      left: 5px;
+      transition: all 0.4s;
+    }
+  }
+  .wrap_btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+  }
+}

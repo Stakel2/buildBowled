@@ -1,0 +1,19 @@
+@import '../../../../../assets/styles/_var.scss';
+
+.featured_all.row{
+    margin: 0;
+    border:1px solid $borderNFTCard;
+    .cardDrop_style.card{
+        width:20%; 
+
+        @media(max-width:1085px){
+            width:25%; 
+        }
+        @media(max-width:900px){
+            width:33.3334%; 
+        }
+        @media(max-width:680px){
+            width:100%; 
+        }
+    }
+}

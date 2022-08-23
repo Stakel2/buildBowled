@@ -1,0 +1,439 @@
+@import '../../../../assets/market/styles/_var.scss';
+
+.wrap_allMkt{
+    padding-bottom: 100px;
+    padding-top: 40px;
+    h1{
+      text-align: center;
+      color: #fff;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+}
+.mkt_sidebarStyle.col{
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding:0px;
+    max-width:396px;
+
+    @media(max-width:1279px){
+      max-width:317px;
+    }
+
+    @media(max-width:1159px){
+      display: none;
+
+      &.showFilter{
+        display: block;
+        background: #02002C;
+        position: absolute;
+        left: 0px;
+        right:0px;
+        margin:0 auto;
+        z-index: 100;
+        max-height:400px ;
+        overflow-y: auto;
+      }
+    }
+}
+.col_marketSiderbar{
+    padding:20px;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+
+    &:last-child{
+      border-bottom: 0px;
+    }
+
+    .col_mktSidebarHeader{
+      .col{
+        .cm_titleStyle{
+          color: $subtitleColor;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        &:nth-child(2){
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          button{
+            width: 14px;
+            height: 9px;
+            background: url(../../../../assets/images/arrow_down_sidebar.svg) no-repeat;
+            border:0px;
+            display: block;
+
+            &.collapsed{
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+
+    .sidebarContent{
+      &.hideItem{
+        display: none;
+      }
+    }
+
+    .cm_items{
+        margin: 0;
+        padding: 0;
+        .cm_item {
+            display: flex;
+            align-items: center;
+            position: relative;
+            
+            span.icon_image{
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+            }
+
+            .form-check-input {
+                position: absolute; // take it out of document flow
+                opacity: 0; // hide it
+              
+                & + label {
+                  position: relative;
+                  cursor: pointer;
+                  padding: 0;
+                }
+              
+                // Box focus
+                &:focus + label:before {
+                  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+                }
+              
+                // Disabled state label.
+                &:disabled + label {
+                  color: #b8b8b8;
+                  cursor: auto;
+                }
+              
+                // Disabled box.
+                &:disabled + label:before {
+                  box-shadow: none;
+                  background: #ddd;
+                }
+              
+                // Checkmark. Could be replaced with an image
+                &:checked + label:after {
+                  content: '';
+                  position: absolute;
+                  right: 5px;
+                  top: 22px;
+                  background: white;
+                  width: 2px;
+                  height: 2px;
+                  box-shadow: 
+                    2px 0 0 white,
+                    4px 0 0 white,
+                    4px -2px 0 white,
+                    4px -4px 0 white,
+                    4px -6px 0 white,
+                    4px -8px 0 white;
+                  transform: rotate(45deg);
+                }
+              }
+
+            .form-check{
+                margin: 0;
+                padding: 0;
+                flex:1;
+                label{
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $textWhite;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    transition: all .25s;
+
+                    &:hover{
+                        color: $textWhite05;
+                    }
+                }
+            }
+            &.exPaddLeft{
+              span.icon_image{
+                margin-right: 10px;
+              }
+            } 
+        }
+       
+    }
+  
+}
+
+.mkt_allList.col{
+    padding-left: 55px;
+    // padding-top: 25px;
+
+    @media(max-width:1159px){
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .card.nftCard_style{
+        margin-bottom: 25px;
+        // border: 1px solid;
+        border-radius: 2rem;
+
+        .card-img-top{
+            transform: none;
+        }
+    }
+}
+
+
+.marketRangeFilter{
+
+  &.rangeBarStyle{
+    margin-bottom: 35px;
+  }
+  .marketFilterRangeSlider{
+      background:$mktRangeBar ;
+      height: 6px;
+      .rangeslider__fill{
+        background:$mktRangeBarFill ;
+      }
+      .rangeslider__handle{
+        background:$mktRangeBarFill;
+        border-color:$mktRangeBarFill;
+        width: 20px;
+        height: 20px;
+
+        &::after{
+          display:none !important;
+        }
+      }
+  }
+  ul.rangeslider__labels{
+    li.rangeslider__label-item{
+      color: $textWhite;
+      font-size: 12px;
+    }
+  }
+}
+
+.mkt_sidebar_range{
+
+  h2{
+    color: #0BD7E7;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  h3{
+    margin-top: 25px;
+    color: $textWhite;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+
+    &::before{
+      content:'';
+      background: url(../../../../assets/images/arrow_list_sidebar.svg) no-repeat;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 11px;
+    }
+  }
+}
+
+.mkp_headerStyle{
+  margin-bottom: 30px;
+
+  @media(max-width:637px){
+    flex-direction: column;
+  }
+
+  .mkp_hdr_left{
+    button.mkt_title_button_style{
+      font-size: 36px;
+      color: $textWhite;
+      background: transparent url(../../../../assets/images/icon_back.svg) left center no-repeat;
+      border:0px;
+      outline: none;
+      padding-left: 45px;
+
+      @media(max-width:767px){
+        font-size: 22px;
+        margin-top: 11px;
+      }
+    }
+  }
+  .mkp_hdr_right{
+    text-align: right;
+    
+    @media(max-width:1159px){
+      display: flex;
+      justify-content: flex-end;
+    }
+
+
+    .btn-primary{
+    background: #171740  !important;
+    border:0px;
+    box-shadow: none !important;
+    padding-right: 63px;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #B1BECE;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-width: 216px;
+
+    @media(max-width:767px){
+      font-size: 13px;
+      min-width: 116px;
+      padding-right: 43px;
+    }
+
+    &::before{
+      display: none;
+    }
+
+    &::after{
+      position: absolute;
+      right:20px;
+      top:50%;
+      transform: translateY(-50%);
+    }
+    
+    }
+
+    .dropdown-menu.show {
+      width: 216px;
+      border-radius: 0;
+      background: #171740;
+      padding: 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      overflow: hidden;
+
+      @media(max-width:767px){
+        font-size: 12px;
+        width: 116px;
+      }
+      a{
+        color: #B1BECE;
+        font-size: 15px;
+        background: #0C0C31;
+        border-bottom: 1px solid #1C1C3F;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.marketPagination{
+ 
+  .pagination{
+    li{
+      a{
+          width: 50px !important;
+          height: 50px !important;
+          background: #15153B !important;
+          font-size: 18px !important;
+          color:rgba(255,255,255,0.5) !important;
+          border-radius: 8px;
+          display: flex !important;
+          justify-content: center;
+          align-items: center;
+          outline: none !important;
+          box-shadow:  none !important;
+
+          &:hover{
+            background: #0d0d28 !important;
+          }
+         
+      }
+      &.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .page-link{
+          background:transparent;
+          border:0px;
+        }
+      }
+      &:first-child{
+        display: block;
+        background: transparent !important;
+
+        a{
+          background-color:transparent !important;
+          font-size: 0px !important;
+          background: url(../../../../assets/images/rightpeg.svg) center no-repeat !important;
+          transform: rotate(180deg);
+          
+        }
+      }
+      &:last-child{
+        display: block;
+      }
+      &:nth-child(2){  
+        a{
+          background-image: none;
+          font-size: inherit;
+        }
+      }
+      &:nth-last-child(-n+2){  
+        
+        a{
+          background-image: none;
+          font-size: inherit; 
+        }
+      }
+      &:last-child{
+        a{
+          background-color:transparent !important;
+          font-size: 0px !important;
+          background: url(../../../../assets/images/rightpeg.svg) center no-repeat !important;
+        }
+      }  
+
+     
+    }
+  }
+
+}
+
+.mFilter{
+  background: transparent;;
+  border:0px;
+  color:#fff;
+  background: $highlightColor;
+  border-radius: 4px;
+  margin-left: 8px;
+  display: none;
+
+  @media(max-width:1159px){
+    display: block;
+  }
+}
+.icon_image_flag{
+  margin-right: 10px;
+  img{
+    width: 24px;
+    height: 24px;
+    border-radius:12px;
+  }
+}
+
+
+.no_rec{
+  text-align: center;
+  color: #fff;
+}
+.AssetsNetworkas{
+  .withdrawSelect{
+    width: 200px !important;
+    float: right;
+  }
+}

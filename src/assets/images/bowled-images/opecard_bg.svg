@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="412" viewBox="0 0 420 412">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7036" data-name="Rectangle 7036" width="420" height="412" rx="20" fill="#011a02"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6e3083"/>
+      <stop offset="1" stop-color="#00170a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_19961" data-name="Group 19961" transform="translate(-278 -1901)">
+    <rect id="Rectangle_7035" data-name="Rectangle 7035" width="420" height="412" rx="20" transform="translate(278 1901)" fill="#0f063e"/>
+    <g id="Mask_Group_255" data-name="Mask Group 255" transform="translate(278 1901)" clip-path="url(#clip-path)">
+      <ellipse id="Ellipse_8661" data-name="Ellipse 8661" cx="423.5" cy="445" rx="423.5" ry="445" transform="translate(-30 -57)" fill="url(#radial-gradient)"/>
+      <!-- <path id="Path_4272" data-name="Path 4272" d="M55.827-34.629q13.292.587,21.67,5.478Q89.747-21.6,89.747-5.989T77.5,17.173q-8.378,4.891-21.67,5.478-5.4.235-9.122.235-3.686,0-9.122-.235-13.292-.587-21.67-5.478Q3.662,9.622,3.662-5.989t12.25-23.162q8.378-4.891,21.67-5.478,5.436-.235,9.122-.235Q50.428-34.863,55.827-34.629ZM46.7-18.861q-12.287,0-16.9,3.169a7.934,7.934,0,0,0-2.457,2.9,15,15,0,0,0-1.489,6.808,19.258,19.258,0,0,0,.316,3.267A12.606,12.606,0,0,0,27.343.8,8.325,8.325,0,0,0,29.8,3.714a14.4,14.4,0,0,0,5.566,2.152,47.353,47.353,0,0,0,6.721.822q3.277.157,4.617.156,12.324,0,16.941-3.13a8.541,8.541,0,0,0,2.42-2.9,15,15,0,0,0,1.489-6.808,19.26,19.26,0,0,0-.316-3.267A12.872,12.872,0,0,0,66.066-12.8a8.075,8.075,0,0,0-2.42-2.9,14.749,14.749,0,0,0-5.6-2.152,49.429,49.429,0,0,0-6.721-.841Q48.045-18.861,46.7-18.861Zm96.622,9-8.675,30.87H109.741L88.89-32.985h22.675L123.071,1.68l10.09-34.665h20.33L163.582,1.68,175.05-32.985h22.713L176.874,21.007H151.965ZM227.4-32.985,257.485-1.137V-32.985H278.3V21.007H252.533L222.486-10.88V21.007H201.672V-32.985Z" transform="translate(107.866 70.061)" fill="none" stroke="#fff" stroke-width="1" opacity="0.15"/> -->
+    </g>
+  </g>
+</svg>

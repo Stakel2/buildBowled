@@ -1,0 +1,81 @@
+@import '../../../assets/styles/_var.scss';
+
+.cardLoginWith_style{
+    background:url(../../../assets/images/signup/cardBg.svg) no-repeat;
+    min-height: 433px;
+    background-size: cover;
+    transition: all .25s;
+    border-radius: 20px;
+    cursor: pointer;
+    .card-header{
+        text-align: center;
+        padding-top: 60px;
+        .loginWithAvatar{
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px $white;
+            overflow: hidden;
+            display: inline-block;
+
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    .card-body{
+        text-align: center;
+
+        .card-title.h5{
+            font-size: 24px;
+            color: $white-60;
+            font-weight: 400; 
+        }
+        .card-text{
+            font-size: 16px;
+            color: $cardSignupOption;
+            font-weight: 400; 
+            opacity: 0;
+            transition: all .25s;
+        }
+
+        .loginwithLink{
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            background: transparent linear-gradient(90deg, #F7CEB2 0%, #994E25 100%) 0% 0% no-repeat padding-box;
+            display: inline-block;
+            border-radius: 50%;
+            position: relative;
+            transition: all .25s;
+            &:before{
+                position: absolute;
+                content: '';
+                background: url(../../../assets/images/signup/icon_more.svg) no-repeat;
+                width: 25px;
+                height: 14px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:hover{
+                transform: scale(1.02);
+                box-shadow: 0 0 10px $white;
+            }
+        }
+    }
+    &:hover{
+        box-shadow: 0 0 0 2px $white-60;
+
+        .card-text{
+            opacity: 1;
+        }
+    }
+    @media(max-width:980px){
+        margin-bottom: 20px;
+
+       
+    }
+
+}

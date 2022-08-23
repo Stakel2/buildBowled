@@ -1,0 +1,50 @@
+@import '../../../assets/styles/_var.scss';
+
+.featured_section_style.card{
+    border-radius: 0px;
+    border:0px;
+    cursor: pointer;
+
+    .card-header{
+        border-radius: 0px;
+        position: relative;
+        padding:0px;
+        border:0px;
+        min-height: 120px;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        img{
+            width: 100%;
+        }
+
+        .propfile_pic{
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            width: 69px;
+            height: 69px;
+            border-radius: 50%;
+            border:1px solid $white;
+            overflow: hidden;
+            bottom: -28%;
+            margin: 0 auto;
+            box-shadow: 0 0 4px rgba(0,0,0,0.2);
+        }
+    }
+    .card-body{
+        padding-top: 50px;
+        padding-bottom: 25px;
+        min-height: 140px;
+        .card-title.h5{
+            font-size: 16px;
+            font-weight: 500;
+            color: $blackText;
+        }
+        p.card-text{
+            font-size: 12px;
+            font-weight: 500;
+            color: $light;
+        }
+    }
+}

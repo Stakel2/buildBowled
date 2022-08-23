@@ -1,0 +1,73 @@
+.exchange-header{
+    .header-logo{
+        background-image: url(../../assets/images/logo.png);
+        width: 74px;
+        height: 28px;
+        background-repeat: no-repeat;
+        margin-right: 40px;
+
+    }
+    .navbar-nav 
+    {
+        align-items: center;
+    .nav-link {
+        color: #fff;
+        font-size: 15px;
+    }
+    .header-text {
+        margin-left: 30px;
+    }
+    .dropdown-toggle{
+        font-weight: bold;
+        &:after{
+            border-top: .3em solid #ffc425;
+        }
+    }
+
+   .green-bold {
+        color: #02c076;
+        font-weight: 600;
+        margin: 0;
+    }
+    .white-sm {
+        display: block;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .font-sm{
+        font-size: 12px;
+        font-weight: 400;
+
+    }
+    .bold{
+        font-weight: 600;
+    }
+}
+.link_signin {
+    margin-right: 35px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    .user-name{
+        margin-left: 10px;
+    }
+}
+.rightNavbar {
+    @media (max-width:991px){
+        flex-direction: row;
+        position: absolute;
+        top: 11px;
+        left: 115px;
+    }
+ .link_signin {
+    @media (max-width:991px){
+        margin-right: 10px;
+    }
+}
+}
+}

@@ -1,0 +1,161 @@
+@import '../../../../assets/styles/_var.scss';
+
+.manageWallet_left{
+    h4{
+        font-family: $basefont;
+        color: $baseColor;
+        font-size: 26px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    h5{
+        font-family: $basefont;
+        color: $baseColor;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+   .manageWallet_left_address_text_style{
+        font-family: $basefont;
+        color: $inputTextStyle;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 46px;
+   }
+   .manageWallet_left_total_asset_style{
+        font-family: $basefont;
+        color: $baseColor;
+        font-size: 30px;
+        font-weight: 700;
+
+   }
+
+}
+
+.manageWallet_right{
+    h4{
+        font-family: $basefont;
+        color: $baseColor;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .full_width{
+        width: 100%;
+        text-transform: uppercase;
+        height: 73px;
+        font-size: 24px;
+    }
+    .receiveAsset{
+        margin-bottom: 39px;
+        background: transparent;
+        color: $baseColor;
+
+    }
+    .back_btns{
+        text-align: right;
+        margin-top: 25px;
+        .back_to_myAccount{
+            font-family: $basefont;
+            color: $filterTextColor;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    
+}
+
+.assets_table{
+    margin-top: 100px;
+    border-top: 2px solid $lightText;
+    padding-top: 45px;
+    .assets_table_header{
+        h2{
+            font-family: $basefont;
+            color: $baseColor;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+    }
+    .assetTableStyle{
+
+            thead{
+                th{
+                    background: #E5E5E5;
+                    font-family: $basefont;
+                    color: $baseColor;
+                    font-size: 30px;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+            }
+            tbody{
+                td{
+                    font-family: $basefont;
+                    color: $baseColor;
+                    font-size: 30px;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    font-weight: 400;
+                }
+            }
+
+    }
+}
+
+.text-address{
+    font-family: $basefont;
+    font-size: 30px;
+    color: $inputTextStyle;
+}
+
+.paymentRequired_sectoin{
+    p{
+        color: $baseColor;
+        font-family: $basefont;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    h3{
+        color: $baseColor;
+        font-family: $basefont;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+.first_column_style{
+    padding-bottom: 25px;
+    border-bottom: 1px solid $baseColor;
+}
+.paymentMethod_block{
+    h2.paymentMethod_title{
+        font-family: $titlefont;
+        color: $baseColor;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    .paymentMethod{
+        display: flex;
+        flex-direction: row;
+        li{
+            flex:1; 
+            &:first-child{
+                margin-right: 25px;
+            }
+            &:last-child{
+                margin-left: 25px;
+            }
+            a{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                border:1px solid $baseColor;
+                min-height: 120px;
+            }
+        }
+    }    
+}
+

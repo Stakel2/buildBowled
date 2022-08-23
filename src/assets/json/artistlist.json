@@ -1,0 +1,102 @@
+import art_bg_a from '../../../../assets/images/artist/art_bg_a.png'
+import art_bg_b from '../../../../assets/images/artist/art_bg_b.png'
+import art_bg_c from '../../../../assets/images/artist/art_bg_c.jpg'
+import art_bg_d from '../../../../assets/images/artist/art_bg_d.jpg'
+import art_bg_e from '../../../../assets/images/artist/art_bg_e.jpg'
+import art_bg_f from '../../../../assets/images/artist/art_bg_f.jpg'
+import art_bg_g from '../../../../assets/images/artist/art_bg_g.jpg'
+import art_bg_h from '../../../../assets/images/artist/art_bg_h.jpg'
+import art_bg_i from '../../../../assets/images/artist/art_bg_i.jpg'
+import art_bg_j from '../../../../assets/images/artist/art_bg_j.jpg'
+import art_bg_k from '../../../../assets/images/artist/art_bg_k.jpg'
+import art_bg_l from '../../../../assets/images/artist/art_bg_l.jpg'
+
+
+import artist_bg_a from '../../../../assets/images/artist/artist_bg_a.jpg'
+import artist_bg_b from '../../../../assets/images/artist/artist_bg_b.jpg'
+import artist_bg_c from '../../../../assets/images/artist/artist_bg_c.jpg'
+import artist_bg_d from '../../../../assets/images/artist/artist_bg_d.jpg'
+import artist_bg_e from '../../../../assets/images/artist/artist_bg_e.jpg'
+import artist_bg_f from '../../../../assets/images/artist/artist_bg_f.jpg'
+import artist_bg_g from '../../../../assets/images/artist/artist_bg_g.jpg'
+import artist_bg_h from '../../../../assets/images/artist/artist_bg_h.jpg'
+import artist_bg_i from '../../../../assets/images/artist/artist_bg_i.jpg'
+import artist_bg_j from '../../../../assets/images/artist/artist_bg_j.jpg'
+import artist_bg_k from '../../../../assets/images/artist/artist_bg_k.jpg'
+import artist_bg_l from '../../../../assets/images/artist/artist_bg_l.jpg'
+
+
+[
+    {
+        artBg:art_bg_a,
+        artImg:artist_bg_a,
+        atristname:'Toon Bodyslam',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_b,
+        artImg:artist_bg_b,
+        atristname:'Palmy Eve',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_c,
+        artImg:artist_bg_c,
+        atristname:'Bird Thongchai',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_d,
+        artImg:artist_bg_d,
+        atristname:'Peck Palitchoke',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_e,
+        artImg:artist_bg_e,
+        atristname:'Da Endorphine',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_f,
+        artImg:artist_bg_f,
+        atristname:'Pop Pongkool',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_g,
+        artImg:artist_bg_g,
+        atristname:'New Jiew',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_h,
+        artImg:artist_bg_h,
+        atristname:'J-Jetrin',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_i,
+        artImg:artist_bg_i,
+        atristname:'Asanee & Wasan',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_j,
+        artImg:artist_bg_j,
+        atristname:'Gancore Club',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_k,
+        artImg:artist_bg_k,
+        atristname:'Chin Chinawut',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+        artBg:art_bg_l,
+        artImg:artist_bg_l,
+        atristname:'Thaitanium',
+        atristdes:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+]

@@ -1,0 +1,93 @@
+@import "../../../assets/styles/_var.scss";
+.nftClaim_card {
+  padding: 25px 32px;
+  // max-width: 308px;
+  min-height: 470px;
+  background: $bgBlack;
+  border: 1px solid $borderColor;
+  // border-right: 0;
+  border-radius: 0;
+  
+  // &:last-child {
+  //   border-right: 2px solid $borderColor;
+  // }
+  @media (max-width: 767px) {
+    padding: 20px 25px;
+    
+  }
+  .nftImage {
+    max-width: 242px;
+    max-height: 250px;
+    overflow: hidden;
+    position: relative;
+    min-height: 242px;
+    @media (max-width: 600px) {
+        max-width: 100%;
+    }
+    video {
+      height: 100%;
+      min-height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #000;
+    }
+  }
+  .card-body {
+    padding: 0;
+    padding-top: 20px;
+    .card-author-wrap {
+      padding-bottom: 20px;
+      border-bottom: 2px solid $borderColor;
+      span {
+        display: block;
+        color: $black;
+      }
+      .artist-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: $white;
+      }
+      .artist-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: $white;
+      }
+      .bowled-nft {
+        margin-bottom: 8px;
+        img {
+          max-width: 72px;
+        }
+      }
+      .nft-blockchain {
+        color: $textColor-70;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+          margin-left: 10px;
+          width: 21px;
+          height: 21px;
+        }
+      }
+    }
+    .card-status-wrap {
+      padding-top: 20px;
+      h4 {
+        font-size: 12px;
+        font-weight: 500;
+        color: $textColor-70;
+        margin-bottom: 0;
+
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 0px;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../../assets/styles/_var.scss';
+
+.event_slider{
+     margin-bottom: 180px;
+    .event_blockLeft{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            @media(max-width:990px){
+                margin-bottom: 45px;
+            }
+
+            h2{
+                font-size: 40px;
+                color: $white;
+                font-weight: 700;
+            }
+            p{
+                font-size: 18px;
+                line-height: 32px;
+                color: $white;
+                font-weight: 500;
+            }
+            
+        }
+        
+        .slick-arrow{
+            background: $bgBlack;
+            z-index: 10;
+            bottom:-117px;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 105%;
+                height: 102%;
+                z-index: -1;
+                border-radius: 15px;
+                background: transparent linear-gradient(90deg, #F7CEB2 0%, #994E25 100%) 0% 0% no-repeat padding-box;
+                left: 50%;
+                top: 49.9%;
+                transform: translate(-50%, -50%);
+            }
+            &::before{
+                width: 54px;
+                height: 54px;
+                display:  $bgBlack;
+                
+                border-radius: 15px;
+                display: block;
+                opacity: 1;
+                left: 0;
+                top: 0;
+            }
+            &.slick-prev{
+                top: inherit;
+                width: 55px;
+                height: 55px;
+                border-radius: 15px;
+                left: 14px;
+
+                &:before{
+                    content:'';
+                    background: #000 url(../../../assets/images/home/drop_slider_arrow_left.svg) center no-repeat !important;
+                    background-size: 13px !important;
+                }
+            }
+            &.slick-next{
+                left:85px;
+                right: inherit;
+                top: inherit;
+                width: 55px;
+                height: 55px;
+                border-radius: 15px;
+
+                &:before{
+                    content:'';
+                    background: #000 url(../../../assets/images/home/drop_slider_arrow_right.svg) center no-repeat !important;
+                    background-size: 13px !important;
+                }
+            }
+        }
+       
+        
+    
+}

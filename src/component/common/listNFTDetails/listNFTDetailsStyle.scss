@@ -1,0 +1,50 @@
+@import '../../../assets/styles/_var.scss';
+
+.nft_details_style.container{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            width: 23%;
+            border:1px solid $borderNFTCard;
+            background: $bgNFTCard;
+            display: flex;
+            min-height: 131px;
+            border-radius: 7px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @media(max-width:768px){
+                min-height: 70px;
+            }
+
+            @media(max-width:480px){
+                width: 48%;
+                margin-bottom: 10px;
+                
+            }
+
+            strong{
+                font-size: 24px;
+                font-weight: 500;
+                color: $white;
+
+                @media(max-width:768px){
+                    font-size: 18px;
+                }
+            }
+            span{
+                font-size: 16px;
+                font-weight: 400;
+                color: $textColor-70;
+
+                @media(max-width:768px){
+                    font-size: 12px;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@import '../../../assets/styles/_var.scss';
+
+.listgateway_section{
+    margin-bottom: 80px;
+    @media(max-width:980px){
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+    .listgateway_section_left{
+        position: relative;
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        @media(max-width:980px){
+            width: 100%;
+            flex-direction: column;
+        }
+        .artist_avatars{
+            width: 48%;
+            img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            &:nth-child(1){
+                margin-top: 95px;
+                @media(max-width:980px){
+                    margin-top: 0px;
+                    margin-bottom: 16px;
+                }
+            }
+            @media(max-width:980px){
+                width: 100%;
+            }
+        }       
+        .artist_avatars_name{
+            height: 81px;
+            background: transparent linear-gradient(280deg, #994E25 0%, #F7CEB2 100%) 0% 0% no-repeat padding-box;;
+            box-sizing: border-box;
+            font-size: 18px;
+            color: $blackText;
+            font-weight: 500;
+            line-height: 81px;
+            padding-left: 31px;
+        }
+        @media(max-width:980px){
+            max-width: 100%;
+            flex-basis: auto;
+            margin-bottom: 50px;
+        }
+    }
+    .listgateway_section_right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 80px;
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            color: $white;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            color: $white;
+            margin-bottom: 35px;
+        }
+        ul{
+            display: flex;
+            @media(max-width:980px){
+                flex-direction: column;
+            }
+            li{
+                margin-right: 30px;
+                @media(max-width:980px){
+                    margin-right: 0px;
+
+                    .btn.btn-default{
+                        margin-bottom: 10px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        @media(max-width:980px){
+            max-width: 100%;
+            flex-basis: auto;
+            padding-left: 10px;
+        }
+    }   
+}

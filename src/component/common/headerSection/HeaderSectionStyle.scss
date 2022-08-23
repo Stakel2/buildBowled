@@ -1,0 +1,50 @@
+@import '../../../assets/market/styles/_var.scss';
+
+.headerSectionStyle{
+    margin-top: 30px !important;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .hs_left{
+       width: calc(100% - 140px);
+        .titleStyle{
+            font-size: 36px;
+            font-weight: 700;
+            color: $textWhite;
+
+            @media(max-width:400px){
+                font-size: 26px;
+            }
+        }
+        .subtitleStyle{
+            font-size: 22px;
+            font-weight: 500;
+            color: $subtitleColor;
+            @media(max-width:400px){
+                font-size: 18px;
+            }
+        }
+    }
+    .hs_right{
+        text-align: right;
+        width: 140px;
+        .buttontextStyle{
+            background: #111140;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #66667F;
+            padding:5px 21px;
+            transition: all .25s;
+
+            &:hover{
+                background: $highlightColor;
+                color: $textWhite;
+            }
+        }
+    }
+}
+.usercard{
+    margin-top: 60px !important;
+}

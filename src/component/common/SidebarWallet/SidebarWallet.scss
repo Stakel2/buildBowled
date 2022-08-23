@@ -1,0 +1,52 @@
+.sideLinks {
+    padding-top: 30px;
+
+    a {
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: 600;
+        display: block;
+        padding: 10px 25px;
+    }
+
+    .active {
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: 600;
+        display: block;
+        padding: 10px 25px;
+    }
+
+    .selected {
+        background: transparent linear-gradient(270deg, #0bd7e745 0%, #15153B00 100%);
+        color: #0BD7E7;
+        padding: 10px 25px;
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: 600;
+    }
+}
+
+.SideBar {
+    position: relative;
+
+    .croseButton {
+        background: none;
+        position: absolute;
+        border: none;
+        right: 5px;
+        top: 5px;
+        display: none;
+
+        @media(max-width:1250px) {
+            display: block;
+        }
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

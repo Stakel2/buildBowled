@@ -1,0 +1,63 @@
+@import '../../../../assets/styles/_var.scss';
+
+.banner_micrositeMain {
+  position: relative;
+  min-height: 188px;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.socailMediaFeedHeader {
+  text-align: center;
+  padding-top: 65px;
+  margin-bottom: 45px;
+  .smf_title {
+    font-family: $basefont;
+    font-size: 34px;
+    color: $baseColor;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .smf_list {
+    display: block;
+    margin: 25px 0 0 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 41px;
+      a {
+        width: 45px;
+        height: 49px;
+        display: block;
+      }
+      &.social_fb {
+        a {
+          background: url(../../../../assets/images/icon_facebook.svg) center
+            no-repeat;
+        }
+      }
+      &.social_insta {
+        a {
+          background: url(../../../../assets/images/icon_instagram.svg) center
+            no-repeat;
+          width: 55px;
+        }
+      }
+      &.social_twitter {
+        a {
+          background: url(../../../../assets/images/icon_twitter.svg) center
+            no-repeat;
+        }
+      }
+      &.social_yt {
+        a {
+          background: url(../../../../assets/images/icon_youtube.svg) center
+            no-repeat;
+          width: 55px;
+        }
+      }
+    }
+  }
+}

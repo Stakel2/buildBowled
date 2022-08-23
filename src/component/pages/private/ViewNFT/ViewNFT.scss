@@ -1,0 +1,353 @@
+.sidebutton {
+    background: none;
+    display: none;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+
+    @media(max-width:1250px) {
+        display: inline-block;
+    }
+
+    .togal {
+        width: 30px;
+    }
+}
+
+.Viewnft {
+    margin-top: 20px;
+
+    .Kanewil {
+        @media(max-width:991px) {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        @media(max-width:500px) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 550px;
+
+            @media(max-width:991px) {
+                width: unset;
+                height: 500px;
+            }
+            @media(max-width:500px) {
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+    }
+
+    .boiBox {
+        position: relative;
+        z-index: 2;
+        .kanetext {
+            display: flex;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 30px;
+                font-weight: 600;
+                color: #fff;
+
+                @media(max-width:1024px) {
+                    font-size: 20px;
+                }
+                @media(max-width:767px) {
+                    font-size: 15px;
+                }
+
+                span {
+                    color: #B1B4BE;
+                    font-weight: 400;
+                }
+            }
+
+            .iconsgr {
+                z-index: 99;
+
+                .largeic {
+                    background: #1B1B40;
+                    padding: 0;
+                    min-width: 60px;
+                    border: 1px solid #343457;
+                    border-radius: 8px;
+
+                    @media(max-width:1024px) {
+                        min-width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &:hover {
+                        background: #1B1B40;
+                    }
+
+                    &:hover:before {
+                        background: #1B1B40;
+                    }
+
+                    &:before {
+                        background: #1B1B40;
+                        border: 1px solid #343457;
+                    }
+
+                    img {
+                        width: 25px;
+
+                        @media(max-width:1024px) {
+                            width: 20px;
+                        }
+                    }
+                }
+
+                .Share {
+                    background: #1B1B40;
+                    padding: 0;
+                    min-width: 60px;
+                    border: 1px solid #343457;
+                    border-radius: 8px;
+
+                    @media(max-width:1024px) {
+
+                        min-width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &:hover {
+                        background: #1B1B40;
+                    }
+
+                    &:hover:before {
+                        background: #1B1B40;
+                    }
+
+                    &:before {
+                        background: #1B1B40;
+                        border: 1px solid #343457;
+                    }
+
+                    img {
+                        width: 25px;
+
+                        @media(max-width:1024px) {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .viewnftbtn {
+
+            @media(max-width:1024px) {
+                display: inline-block;
+                margin-top: 0 !important;
+                text-align: center;
+                width: 100%;
+            }
+
+            button {
+                min-width: 300px;
+                margin: 0 15px 0 0;
+                border-radius: 8px !important;
+                background: rgba(0, 0, 0, 0.9) !important;
+
+                @media(max-width:1024px) {
+                    margin-top: 10px;
+                }
+
+                &:hover {
+                    background: linear-gradient(270deg, var(--unnamed-color-ff2b6e) 0%, #2D0098 100%) !important;
+
+                    &:before {
+                        background: transparent !important;
+                    }
+                }
+
+                &:before {
+                    display: none !important;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: -1;
+                    margin: -1px;
+                    border-radius: inherit;
+                    background: linear-gradient(-90deg, rgb(247, 41, 111) 0%, rgb(55, 2, 150) 93%, rgb(55, 2, 150) 100%);
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            color: #ffffff9e;
+            margin-bottom: 20px !important;
+        }
+
+        .bides {
+            margin-top: 50px;
+
+            h5 {
+                color: #0BD7E7;
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            .table {
+                border: 2px solid #ffffff1a;
+                border-collapse: separate;
+                border-radius: 8px;
+                padding: 0px 5px;
+                tr{
+                    &:last-child{
+                        td{
+                             border-bottom: 0px solid #000 !important;
+                        }
+                    }
+                }
+                .DetailsImg {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .ethertitle {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #ffffff9e;
+                        img{
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+
+                    .kcindyProfile {
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 10px;
+                    }
+
+                    .Headings {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 10px;
+
+                        p {
+                            margin-right: 20px;
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: #ffffff9e;
+                            margin-bottom: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+        .btnbuynft{
+            min-width: 280px !important;
+        }
+    }
+}
+
+.hiddSidebar {
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    width: 0px !important;
+    min-width: 0px !important;
+    max-width: 250px !important;
+    display: inline-block !important;
+
+    .SideBar {
+        display: none;
+    }
+
+    @media(max-width:1024px) {
+        opacity: 1;
+        transition: all ease-in-out 0.5s;
+
+        .SideBar {
+            display: block;
+        }
+    }
+}
+
+.showSideBar {
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+
+    @media(max-width:1024px) {
+        opacity: 0;
+        transition: all ease-in-out 0.5s;
+        width: 0px !important;
+        min-width: 0px !important;
+        max-width: 0px !important;
+        display: inline-block !important;
+
+        .SideBar {
+            display: none;
+        }
+    }
+}
+.placebid{
+    padding: 50px 15px !important;
+    p{
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0 !important;
+    }
+}
+.viewBox{
+    color:#fff;
+    display: flex;
+    //  text-align: center;
+
+    img{
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+}
+.placebidbtn{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    .btn{
+        height: 50px !important;
+        min-width:150px !important;
+        &.gray{
+            background: #1e1e41 !important;
+        }
+    }
+}
+.smallcoin_icon{
+    width: 20px;
+    height: 20px;
+}
+.titleStyle {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    @media(max-width:1630px){
+      font-size: 30px;
+    }
+    @media(max-width:1024px){
+      font-size: 20px;
+    }
+  }

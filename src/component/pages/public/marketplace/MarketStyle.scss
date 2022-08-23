@@ -1,0 +1,116 @@
+@import '../../../../assets/market/styles/_var.scss';
+
+.bannerWrap {
+    position: relative;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+
+    @media(max-width:980px) {
+        height: auto;
+    }
+
+    .banner_left {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-size: 110px;
+            line-height: 120px;
+            font-weight: 500;
+            color: $textWhite;
+
+            @media(max-width:1600px) {
+                font-size: 90px;
+                line-height: 100px;
+
+            }
+
+            @media(max-width:1300px) {
+                font-size: 80px;
+                line-height: 90px;
+            }
+
+            @media(max-width:1012px) {
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            @media(max-width:400px) {
+                font-size: 36px;
+                line-height: 45px;
+            }
+
+            span {
+                color: $highlightColor;
+            }
+
+        }
+    }
+
+    .banner_right {
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        width: 60%;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+
+        @media(max-width:1600px) {
+            width: 50%;
+        }
+
+        @media(max-width:1300px) {
+            width: 42%;
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 150%;
+            height: 150%;
+            left: -20%;
+            top: -30%;
+
+            background: url(../../../../assets/market/banner_bg.png) center no-repeat;
+            background-size: 60%;
+            animation: rotation 5s infinite linear;
+            // -webkit-animation: rotate 5s normal linear infinite;
+            // animation: rotate 5s normal linear infinite;
+
+            @media(max-width:980px) {
+                width: 400px;
+                height: 400px;
+                top: -81%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        @media(max-width:980px) {
+            position: relative;
+
+        }
+
+    }
+}
+
+.comingText {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-weight: 400;
+}
