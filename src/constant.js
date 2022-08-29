@@ -1,4 +1,7 @@
-export const API_HOST = process.env.REACT_APP_API_URL;
+// export const API_HOST = process.env.REACT_APP_API_URL;
+
+// export const API_HOST = "http://localhost:3000"
+
 export const rootName = "";
 export const NETWORK_CHAIN_ID = 8217;
 

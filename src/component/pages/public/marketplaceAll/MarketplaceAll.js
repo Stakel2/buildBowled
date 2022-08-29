@@ -78,6 +78,7 @@ const MarketplaceAll = (props) => {
 
     apiNftCallGet(`/nftfiltersData`)
       .then(async (res) => {
+        console.log("----------" ,res);
         setLoading(false);
         if (res.error) {
           navigate("/404");

@@ -1,4 +1,5 @@
 import Home from "./home/Home";
+import Home2 from "./home/Home2";
 import Drop from "./drop/Drop";
 import Drops from "./drops/Drops";
 import Showcase from "./showcase/Showcase";
@@ -46,5 +47,6 @@ export {
   FeaturedNftAll,
   TermsOfService,
   PrivacyPolicy,
-  Play
+  Play,
+  Home2 
 };

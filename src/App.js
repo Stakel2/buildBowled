@@ -5,6 +5,7 @@ import { PageLayout, LayoutSignUp, LayoutSetup } from "./component/Layout/";
 import { NoGuard, AuthGuard } from "./Guard";
 import {
   Home,
+  Home2,
   Drop,
   Showcase,
   Marketplace,
@@ -63,11 +64,11 @@ import WaitlistModal from "./component/pages/private/Waitlist/WaitlistModal";
 export const UserContext = React.createContext();
 
 const App = () => {
-  return (
 
+    return(
     <Routes>
       <Route path="/" element={<NoGuard />} >
-        <Route path="/" element={<PageLayout innerClass="home_wrap" Component={Home} />} />
+        <Route path="/" element={<PageLayout innerClass="home_wrap" Component={Home2} />} />
         <Route path="/play" element={<PageLayout innerClass="home_wrap" Component={Play} />} />
         <Route path="/drops" element={<PageLayout innerClass="home_wrap" Component={Drop} />} />
         <Route path="/drops/:dropId" element={<PageLayout innerClass="home_wrap" Component={Drops} />} />
@@ -131,7 +132,8 @@ const App = () => {
       </Route>
 
     </Routes>
-  );
+    )
+
 };
 
 export default App;

@@ -15,11 +15,11 @@ const PageLayout = ({ Component, ...props }) => {
 
   return (
     <Container fluid className={`layoutStyle ${props.className}`}>
-      <TopNavbar />
+      {/* <TopNavbar /> */}
       <Container fluid className={`layoutInner ${props.innerClass}`}>
       <Component {...props} /> 
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 };

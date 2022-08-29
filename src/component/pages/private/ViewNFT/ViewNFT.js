@@ -245,6 +245,7 @@ function ViewNFT({ datePosted }) {
     setLoading(true);
     brandsApiCallGet(`/nft/api/v1/nft/${id}?location=IN`)
       .then((response) => {
+        console.log(response,"selectedCoin");
         if (response?.message === "This nft is not available in your country") {
           navigate.replace("/nft-not-found");
           return;
@@ -274,6 +275,7 @@ function ViewNFT({ datePosted }) {
   };
 
   const getBalance = (selectedCoin) => {
+    console.log(selectedCoin,"selectedCoin");
     setLoading(true);
     brandsApiCallGet(
       `wallet/${selectedCoin === "KLAYTN" ? "klay" : "matic"}/get_balance`
@@ -413,7 +415,7 @@ function ViewNFT({ datePosted }) {
   const viewedNft = (id) => {
     userApiCallPatch(`/nftViewed/${id}`, {})
       .then(async (res) => {
-        console.log("response", res);
+        console.log("response ---", res);
         setLoading(false);
         if (res) {
           console.log("collectData");

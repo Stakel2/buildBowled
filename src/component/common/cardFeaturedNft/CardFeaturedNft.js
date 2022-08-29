@@ -42,6 +42,7 @@ const CardFeaturedNft = (props) => {
 
         className={`nftCard_style ${props.className ? props.className : ""} ` }
       >
+   
         {/* <Card.Header className="featuredNftCard_img">
         <img src={nftLogo} alt={title} />
       </Card.Header> */}

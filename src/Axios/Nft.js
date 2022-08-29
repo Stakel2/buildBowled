@@ -12,10 +12,12 @@ axiosApi.interceptors.request.use((config) => {
 });
 
 function formatUrl(url, params) {
+  console.log(url , params,"llllllllllllll");
   params =
     params && Object.keys(params).length > 0
       ? `?${new URLSearchParams(params).toString()}`
       : "";
+   
   return `${url}${params}`;
 }
 

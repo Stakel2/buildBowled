@@ -29,13 +29,13 @@ const Marketplace = () => {
  
  function nftFilter() {
   setLoading(true);
-
+console.log(limit , page ,"000000000000000000");
   apiNftCallGet(`/featurednft/${limit}/${page}/desc?location=IN&mintType=PLAYER`)
     .then(async (res) => {
       if (res.error) {
         navigate("/404");
       } else {
-        setPlayerList(res?.data?.rows);
+        setPlayerList(res?.data?.rows); 
         setTotalRecords(res?.data?.count);
       }
       setLoading(false);
