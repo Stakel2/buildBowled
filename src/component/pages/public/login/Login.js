@@ -60,6 +60,7 @@ const Login = (props) => {
       email: value.email,
       password: value.password,
     };
+    console.log(newData,"jjjjjjjj");
     const finalData = jwtEncrypt(newData);
 
     setLoading(true);
