@@ -5,7 +5,7 @@
   @import "../../../../assets/css/style.css";
 
     body {
-      font-family: 'ProductSans-Regular';
+      font-family: 'ProductSans-Regular' !important;
       font-size: 14px;
       font-weight: 300;
       color: #000;
@@ -67,6 +67,11 @@
       left: 30px;
       transform: translate(0px, -50%);
   }
+  .section_nav a:hover {
+    color: #fff;
+    opacity: 1;
+    font-family: 'ProductSans-Bold';
+ }
   .section_nav ul:after {
       content: "";
       width: 1px;
@@ -201,6 +206,7 @@
       color: #fff;
       font-size: calc(.6rem + 1vw);
       margin: 0;
+      line-height: normal;
   }
   .about_photos {
       display: flex;
@@ -535,11 +541,11 @@
   .faq_section {
     background-image: url(../../../../assets/images/1.png);
   }
-  .accordion-item {
+  .faq_section .accordion-item {
       background-color: transparent;
       border: 0;
   }
-  .accordion-button {
+  .faq_section .accordion-button {
       color: #fff;
       background: transparent;
       border-bottom: 1px solid #fff;
@@ -549,23 +555,23 @@
       outline: none !important;
       box-shadow: none !important;
   }
-  .accordion {
+  .faq_section .accordion {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
   }
-  .accordion-button:not(.collapsed) {
+  .faq_section .accordion-button:not(.collapsed) {
       background: transparent;
       color: #fff;
   }
-  .accordion-body {
+  .faq_section .accordion-body {
       color: #fff;
       font-size: 18px;
   }
-  .accordion-button::after{
+  .faq_section .accordion-button::after{
     filter: invert(1);
   }
-  .accordion-button:focus{
+  .faq_section .accordion-button:focus{
     border-color: #fff;
   }
   
