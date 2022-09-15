@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Jost-Bold';
+    src: url('./Jost-Bold.eot');
+    src: url('./Jost-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./Jost-Bold.svg#Jost-Bold') format('svg'),
+         url('./Jost-Bold.ttf') format('truetype'),
+         url('./Jost-Bold.woff') format('woff'),
+         url('./Jost-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  
+  @font-face {
+    font-family: 'ProductSans-Italic';
+    src: url('./ProductSans-Italic.svg#ProductSans-Italic') format('svg'),
+         url('./ProductSans-Italic.ttf') format('truetype'),
+         url('./ProductSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'ProductSans-Bold';
+    src: url('./ProductSans-Bold.svg#ProductSans-Bold') format('svg'),
+         url('./ProductSans-Bold.ttf') format('truetype'),
+         url('./ProductSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'ProductSans-Regular';
+    src: url('./ProductSans-Regular.svg#ProductSans-Regular') format('svg'),
+         url('./ProductSans-Regular.ttf') format('truetype'),
+         url('./ProductSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }

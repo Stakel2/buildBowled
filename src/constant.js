@@ -9,15 +9,26 @@ export const NETWORK_CHAIN_ID = 8217;
 export const GOOGLE_CLIENT_ID =
   "716835216598-3f24d8908659m17cirg1hchstclhekee.apps.googleusercontent.com";
 // stage//
-export const REACT_APP_ADMIN = "https://api-stage.bowled.io/admin/api/v1";
+// export const REACT_APP_ADMIN = "https://api-stage.bowled.io/admin/api/v1";
+export const REACT_APP_ADMIN = "http://localhost:3001/admin/api/v1";
+
 export const REACT_APP_WORDPRESS =
   "https://wp.eastnft.com/wp-json/wp/v2/posts?_fields=excerpt,title,link,featured_media,better_featured_image";
-export const REACT_APP_USER = "https://api-stage.bowled.io/users/api/v1";
+// export const REACT_APP_USER = "https://api-stage.bowled.io/users/api/v1";
+export const REACT_APP_USER = "http://localhost:3002/users/api/v1";
+
 // "https://0bhnl1ewol.execute-api.us-east-1.amazonaws.com/user";
 // "https://0bhnl1ewol.execute-api.us-east-1.amazonaws.com/users"
-export const REACT_APP_NFT = "https://api-stage.bowled.io/nft/api/v1";
-export const REACT_APP_BRANDS = "https://api-stage.bowled.io/";
-export const REACT_APP_ORDER = "https://api-stage.bowled.io/order/api/v1/";
+// export const REACT_APP_NFT = "https://api-stage.bowled.io/nft/api/v1";
+export const REACT_APP_NFT = "http://localhost:3003/nft/api/v1";
+
+
+// export const REACT_APP_BRANDS = "https://api-stage.bowled.io/";
+export const REACT_APP_BRANDS = "http://localhost:3200/";
+
+// export const REACT_APP_ORDER = "https://api-stage.bowled.io/order/api/v1/";
+export const REACT_APP_ORDER = "http://localhost:3003/order/api/v1/";
+
 export const PAYPAL_CLIENT_ID =
   "AQhmlvHQcYOHVUG3eS56J9L7F8BnuH6mZh1FP9DIy0jx_sxr73A-fiQKonpw4M4F-LnNg4hALAU1ZzF6";
 export const TXN_URL_MATIC = "https://mumbai.polygonscan.com/tx/";

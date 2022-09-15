@@ -278,7 +278,7 @@ function ViewNFT({ datePosted }) {
     console.log(selectedCoin,"selectedCoin");
     setLoading(true);
     brandsApiCallGet(
-      `wallet/${selectedCoin === "KLAYTN" ? "klay" : "matic"}/get_balance`
+      `wallet/${selectedCoin === "KLAYTN" ? "klay" : "matic"}/get_balance`,1
     )
       .then((res) => {
         if (res) {
@@ -831,14 +831,14 @@ function ViewNFT({ datePosted }) {
                           // />
                           <Button
                             className="btnbuynft"
-                            type="button"
-                            disabled={
-                              +productDetail?.coinValue > +balance ||
-                              +productDetail?.sold === 0
-                                ? userData?.kyc?.userId !==
-                                  auctionWiner?.auctionWinnerId
-                                : true
-                            }
+                            type="button" Q
+                            // disabled={
+                            //   +productDetail?.coinValue > +balance ||
+                            //   +productDetail?.sold === 0
+                            //     ? userData?.kyc?.userId !==
+                            //       auctionWiner?.auctionWinnerId
+                            //     : true
+                            // }
                             onClick={() =>
                               // buyHandler()
                               buyNft(productDetail?.nftId, auctionWiner?.price)

@@ -82,7 +82,8 @@ export const brandsApiCallPost = (url, data, params = {}, toastOn) =>
       });
   });
 
-export const brandsApiCallGet = (url, params = {}, toastOn) => {
+export const brandsApiCallGet = (url, id, params = {}, toastOn) => {
+  console.log(id,"id");
   return new Promise((resolve, reject) => {
     brandsApi
       .get(formatUrl(url, params))

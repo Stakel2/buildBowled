@@ -46,7 +46,7 @@ import TeamView from "./TeamView";
 import plyer_stadium from "../../../../assets/images/bowled-images/plyer_stadium.png";
 import discord from "../../../../assets/images/bowled-images/discord.svg";
 import insta from "../../../../assets/images/bowled-images/insta.svg";
-import medium from "../../../../assets/images/bowled-images/medium.svg";
+import medium from "../../../../assets/images/mediumWhite.png";
 import twitter from "../../../../assets/images/bowled-images/twitter.svg";
 import telegram from "../../../../assets/images/bowled-images/telegram.svg";
 import pvsp from "../../../../assets/images/bowled-images/pvsp.png";
@@ -60,6 +60,8 @@ import game2 from "../../../../assets/images/fig2.png";
 import game3 from "../../../../assets/images/fig3.png";
 import game4 from "../../../../assets/images/new1.png";
 import linkedin from "../../../../assets/images/linkedin.svg";
+import download from "../../../../assets/images/download1.svg";
+
 
 import facebook from "../../../../assets/images/facebook.svg";
 import logo_white from "../../../../assets/images/logo-white.svg";
@@ -68,7 +70,6 @@ import discord_icon from "../../../../assets/images/discord_icon.svg";
 import team1 from "../../../../assets/images/team1.png";
 import token from "../../../../assets/images/token.png";
 import orio_game from "../../../../assets/images/orio_game.png";
-
 import game_bold from "../../../../assets/images/game_bold.png";
 import game_npl from "../../../../assets/images/game_npl.png";
 import gameTap from "../../../../assets/images/game_tap_tap.png";
@@ -77,9 +78,9 @@ import cach from "../../../../assets/images/game_cach.png";
 import about1 from "../../../../assets/images/about1.png";
 import about2 from "../../../../assets/images/about2.png";
 import about3 from "../../../../assets/images/about3.png";
-import about4 from "../../../../assets/images/about4.png";
-import about5 from "../../../../assets/images/about5.png";
-import about6 from "../../../../assets/images/about6.png";
+import about4 from "../../../../assets/images/6.png";
+import about5 from "../../../../assets/images/7.png";
+import about6 from "../../../../assets/images/8.png";
 
 // import about1 from "../../../../assets/images/about1.png";
 import team2 from "../../../../assets/images/team2.png";
@@ -90,12 +91,24 @@ import team6 from "../../../../assets/images/team6.png";
 import team7 from "../../../../assets/images/team7.png";
 import team8 from "../../../../assets/images/team8.png";
 import team9 from "../../../../assets/images/team9.png";
-
-
-
-
 import logoWhite from "../../../../assets/images/logo-white.svg";
 import shadow from "../../../../assets/images/shadow.svg";
+
+import cachgame  from "../../../../assets/images/cachgame.png";
+import boldgame  from "../../../../assets/images/boldgame.png";
+import sixrgame  from "../../../../assets/images/sixrgame.png";
+import taptapgame  from "../../../../assets/images/taptapgame.png";
+import tipgame  from "../../../../assets/images/tipgame.png";
+import nplgame  from "../../../../assets/images/nplgame.png";
+import nplgameNew from "../../../../assets/images/nplNew.png";
+
+
+
+
+
+
+
+
 
 const Home2 = () => {
   // const navigate = useNavigate();
@@ -243,11 +256,11 @@ const Home2 = () => {
     <li><a href="#section1"><span className="circle"></span>Home</a></li>
     <li><a href="#section2"><span className="circle"></span>About Us</a></li>
     <li><a href="#section3"><span className="circle"></span>Our Games</a></li>
-    <li><a href="#section4"><span className="circle"></span>BWLD Tokens </a></li>
+    <li><a href="#section4"><span className="circle"></span>BWLD Coins </a></li>
     <li><a href="#section5"><span className="circle"></span>Roadmap</a></li>
     <li><a href="#section6"><span className="circle"></span>The Team</a></li>
     <li><a href="#section7"><span className="circle"></span>Community</a></li>
-    <li><a href="#section8"><span className="circle"></span>Blog</a></li>
+    {/* <li><a href="#section8"><span className="circle"></span>Blog</a></li> */}
     <li><a href="#section9"><span className="circle"></span>FAQ</a></li>
   </ul>
 </nav>
@@ -266,6 +279,11 @@ const Home2 = () => {
   <div className="sc_container main_section_content text-center">
     <h1>OWN  PLAY  EARN</h1>
     <h2>World’s first Play-to-Earn Social Gaming Platform</h2>
+    <div style={{marginLeft:"18px"}}>
+    <a style={{marginTop:"28px"}} href="https://apps.apple.com/us/app/bowled-io/id1642708537" > <img style={{height:"50px"}} src={download}></img></a> 
+    <a href='https://play.google.com/store/apps/details?id=com.bowled.Bowled&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style={{ height: "73px",
+    width: "179px" , marginLeft:"4px"}} alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+    </div>
   </div>
 </section>
 
@@ -275,18 +293,30 @@ const Home2 = () => {
       <div className="col-md-6">
         <div className="about_left">
           <div className="title">About Us</div>
+  
+
           <p>
-             <span> Hi! I am Yorky</span>
+
+          Hi, I am Yorky from Bowled, to guide you through the rails of destiny :) 
+          <br/>
+          <br/>
+          Welcome to the world’s first social gaming platform where you can own, play, trade and earn in fun games using your digital sporting assets.
+ <br />
+ <br />
+               Join our community of gamers, traders, collectors and game developers. Live your passion of e-sports through your mobile phone.
+               <br/><br/>
+                Awesome, isn’t it?
+             {/* <span>Hi, I am Yorky, a superior mascot, to guide you through the rails of destiny.</span>
             <br />
             <br />
               A superior mascot, to guide you through the rails of destiny. 
               Welcome to the world’s seasoned social gaming platform - A NFT ecosystem that allows players to OWN, PLAY, TRADE, EARN with their assets. 
               <br />
               <br />
-              Kowtow/Overrule through a community of gamers, NFT Traders, Collectors and Web3 game developers, all in one platform. Live your passion of e-sports through your mobile phone.
+              Overrule through a community of gamers, NFT Traders, Collectors and Web3 game developers, all in one platform. Live your passion of e-sports through your mobile phone.
               <br />
               <br />
-              Awesome, isn’t it?
+              Awesome, isn’t it? */}
           </p>
         </div>
       </div>
@@ -313,44 +343,44 @@ const Home2 = () => {
       <div className="col-md-4 col-sm-6 col-6">
         <div className="game_box">
           <a href="#">
-            <img src={cach} />
+            <img src={cachgame} />
           </a>
         </div>
       </div>
       <div className="col-md-4 col-sm-6 col-6">
         <div className="game_box">
-          <img src={sixr} />
+          <img src={boldgame} />
         </div>
       </div>
       <div className="col-md-4 col-sm-6 col-6">
         <div className="game_box">
-          <img src={gameTap} />
+          <img src={sixrgame} />
         </div>
       </div>
       <div className="col-md-4 col-sm-6 col-6">
         <div className="game_box">
+          {/* <div className="comingsoon_label">Coming Soon</div> */}
+          <img src={taptapgame} />
+        </div>
+      </div>
+      <div className="col-md-4 col-sm-6 col-6">
+        <div className="game_box">
+          {/* <div className="comingsoon_label">Coming Soon</div> */}
+          <img src={tipgame}/>
+        </div>
+      </div>
+      <div className="col-md-4 col-sm-6 col-6">
+        {/* <div className="game_box">
           <div className="comingsoon_label">Coming Soon</div>
-          <img src={game_npl} />
-        </div>
-      </div>
-      <div className="col-md-4 col-sm-6 col-6">
-        <div className="game_box">
-          <div className="comingsoon_label">Coming Soon</div>
-          <img src={game_bold}/>
-        </div>
-      </div>
-      <div className="col-md-4 col-sm-6 col-6">
-        <div className="game_box">
-          <div className="comingsoon_label">Coming Soon</div>
-          <img src={orio_game} />
-        </div> 
+          <img src={nplgameNew} style={{borderRadius:"27px" , height:"250px" , width:"250px"}} />
+        </div>  */}
       </div>
     </div>
-    <button className="button">Explore Upcoming Games
+    {/* <button className="button">Explore Upcoming Games
       <svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1.99975 2.00025L13.9995 14L1.99975 25.9998" stroke="white" strokeWidth="3"/>
       </svg>
-    </button>
+    </button> */}
   </div>
 </section>
 
@@ -401,7 +431,7 @@ const Home2 = () => {
         <div className="span_date">Q4 '22</div>
         <span>3</span>
         <div className="roadmap_box">
-          <h5>Launch BWLD Tokens</h5>
+          <h5>Launch BWLD Coins</h5>
           <p>Multi-gaming platform with various game formats</p>
         </div>
       </li>
@@ -431,11 +461,11 @@ const Home2 = () => {
         <div className="team_box">
           <div className="team_img">
             <img src={team1} />
-            <a href="https://www.linkedin.com/" target="_blank"><img src=  {linkedin}/></a>
+            <a href="https://www.linkedin.com/in/akshaykhandelwal/" target="_blank"><img src=  {linkedin}/></a>
           </div>
           <div className="team_detail">
             <h6>Akshay Khandelwal</h6>
-            <span>Founder</span>
+            <span>Strategy</span>
           </div>
         </div>
       </div>
@@ -443,11 +473,11 @@ const Home2 = () => {
         <div className="team_box">
           <div className="team_img">
             <img src={team2} />
-            <a href="https://www.linkedin.com/" target="_blank"><img src=  {linkedin}/></a>
+            <a href="https://www.linkedin.com/in/rahul-singh-626167b/" target="_blank"><img src=  {linkedin}/></a>
           </div>
           <div className="team_detail">
             <h6>Rahul   Singh</h6>
-            <span>Founder</span>
+            <span>Marketing</span>
           </div>
         </div>
       </div>
@@ -455,15 +485,15 @@ const Home2 = () => {
         <div className="team_box">
           <div className="team_img">
             <img src={team3} />
-            <a href="https://www.linkedin.com/" target="_blank"><img src=  {linkedin}/></a>
+            <a href="https://www.linkedin.com/in/imahima/" target="_blank"><img src=  {linkedin}/></a>
           </div>
           <div className="team_detail">
             <h6>Neeraj   Jhanji</h6>
-            <span>Founder</span>
+            <span>Product</span>
           </div>
         </div>
       </div>
-      <div className="col-md-4 col-sm-6">
+      {/* <div className="col-md-4 col-sm-6">
         <div className="team_box">
           <div className="team_img">
             <img src={team4}/>
@@ -510,28 +540,41 @@ const Home2 = () => {
             <span>Product & Growth</span>
           </div>
         </div>
-      </div>
+      </div> */}
+   
       <div className="col-md-4 col-sm-6">
         <div className="team_box">
           <div className="team_img">
-            <img src={team8} />
-            <a href="https://www.linkedin.com/" target="_blank"><img src=  {linkedin}/></a>
+            <img src={team9} />
+            <a href="https://www.linkedin.com/in/iamshylesh/" target="_blank"><img src=  {linkedin}/></a>
           </div>
           <div className="team_detail">
-            <h6>Vikesh</h6>
-            <span>Product & Growth</span>
+            <h6>Shylesh monceey</h6>
+            <span>Gaming</span>
           </div>
         </div>
       </div>
       <div className="col-md-4 col-sm-6">
         <div className="team_box">
           <div className="team_img">
-            <img src={team9} />
-            <a href="https://www.linkedin.com/" target="_blank"><img src=  {linkedin}/></a>
+            <img src={team4}/>
+            <a href="https://www.linkedin.com/in/harkirat-singh-lamba-591520b1/" target="_blank"><img src=  {linkedin}/></a>
           </div>
           <div className="team_detail">
-            <h6>Shylesh monceey</h6>
-            <span>Design</span>
+            <h6>Harkirat Singh</h6>
+            <span>Tech</span>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-4 col-sm-6">
+        <div className="team_box">
+          <div className="team_img">
+            <img src={team5} />
+            <a href="https://www.linkedin.com/in/varunmisar/" target="_blank"><img src=  {linkedin}/></a>
+          </div>
+          <div className="team_detail">
+            <h6>Varun Misar</h6>
+            <span>Corporate</span>
           </div>
         </div>
       </div>
@@ -547,6 +590,9 @@ const Home2 = () => {
     <span><img src={shadow} /></span>
   </div>
   <div className="sc_container">
+    <div className="joinCommunity">
+      Join The Community
+    </div>
     <div className="row align-items-center">
         <div className="col-md-6">
           <div className="discord_left">
@@ -559,19 +605,22 @@ const Home2 = () => {
         </div>
         <div className="col-md-6">
           <div className="discord_box">
+            <a href="https://discord.gg/auxtKBvf">
             <img src={discord_icon} />
+
             <button className="button">Discord
               <svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.99975 2.00025L13.9995 14L1.99975 25.9998" stroke="white" strokeWidth="3"/>
               </svg>
             </button>
+            </a>
           </div>
         </div>
     </div>
   </div>
 </section>
 
-<section id="section8" className="content-section blog_section">
+{/* <section id="section8" className="content-section blog_section">
   <div className="shadow_abs">
     <span><img src={shadow}/></span>
     <span><img src={shadow}/></span>
@@ -580,7 +629,8 @@ const Home2 = () => {
   </div>
   <div className="sc_container">
     <div className="title">FOR BLOG’S SAKE!</div>
-    <div className="row">
+    <div className="row" style={{dislay:"flex" , justifyContent:"center"}}>
+     <a href="https://medium.com/@bowled"> <img style={{width:"50%"}} src={medium}></img></a>
       <div className="col-md-4">
         <div className="blog_box">
           <div className="blog_img">
@@ -775,7 +825,7 @@ const Home2 = () => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 <section id="section9" className="content-section faq_section">
   <div className="sc_container">
@@ -783,53 +833,53 @@ const Home2 = () => {
 
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Header>CACH</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Catch to win the match!<br></br>
+
+  -An exciting game to keep you on your gloves.<br></br>
+ -Catch every throw as the difficulty level increases.<br></br>
+ -When you miss the spin, you miss the win. <br></br>
+ -A Single player game that helps you build focus and keeps you hooked for the win.<br></br>
+
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Header>CRIC5</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Pick your 5, and see who survives!<br></br>
+
+-An euphoric multiplayer game that takes you down the memory lane of your childhood.<br></br>
+-Each player gets to pick 5  cards that will battle against your opponent.<br></br>
+-The win is based on the cards picked by each player.<br></br>
+-Collect unique  character cards that are a virtual representation of strengths possessed by your real life cricket heroes.<br></br>
+
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Header>SIXR</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Sixr is a ticker for all solo winners!  <br></br>
+
+ -A relaxing game for solitary players.<br></br>
+-The stronger you hit, the better you score.<br></br>
+-Don’t forget to aim, don’t miss the shot, for you’ll lose the stump and the riches you got. <br></br>
+
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+      {/* <Accordion.Item eventKey="3">
+        <Accordion.Header> NPL</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+       
+It’s so swell, you can’t foretell. Match with an opponent to play NPL!<br></br>
+
+-An interesting multiplayer turn-by-turn cricket game.<br></br>
+-Unique NFT characters with distinctive playstyle and strength.<br></br>
+-Match with opponent to play-for-fun or pick NFT players to play and earn.<br></br>
+-Keep your wins aligned to rank in the tournament find. <br></br>
+
         </Accordion.Body>
-      </Accordion.Item>
+      </Accordion.Item> */}
     </Accordion>
 
     {/* <div className="accordion" id="accordionExample">
@@ -907,7 +957,15 @@ const Home2 = () => {
             It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
           </div>
         </div>
-      </div>
+      </d
+      
+      
+      
+      
+      
+      
+      
+      jiv>
     </div> */}
   </div>
 </section>
@@ -918,39 +976,55 @@ const Home2 = () => {
       <div className="col-md-3 col-sm-6">
         <div className="footer_col">
           <a href="#"><img src={logo_white} /></a>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          <p>                Challenge millions of gamers around the world in various game formats, deploy your skills, knowledge & win big rewards!
+ </p>
         </div>
       </div>
       <div className="col-md-3 col-sm-6">
         <div className="footer_col">
           <h6>About us</h6>
           <ul>
-            <li><a href="#">Zeux</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#section6">Team</a></li>
+            <li><a href="#section3">Portfolio</a></li>
+            <li><a href="https://bowled-io.gitbook.io/bowled.io-light-paper/">Litepaper</a></li>
+            <li><a href="https://www.linkedin.com/company/bowleddotio/posts/?feedView=all">Careers</a></li>
+            <li><a href="mailto:hello@bowled.io?subject=Hey Bowled">Contact us
+            </a></li>
+  5845847
+
           </ul>
         </div>
       </div>
       <div className="col-md-3 col-sm-6">
         <div className="footer_col">
-          <h6>Contact us</h6>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-          <a  href="tel:+908 89097 890">+908 89097 890</a>
+          <h6>Download</h6>
+          {/* <p>                Challenge millions of gamers around the world in various game formats, deploy your skills, knowledge & win big rewards!
+ </p> */}
+<div style={{display:"inline-grid"}}>
+ <a href="https://apps.apple.com/us/app/bowled-io/id1642708537" > <img style={{
+    width: "86%",
+    marginLeft: "11px"
+}} src={download}></img></a> 
+ <a href='https://play.google.com/store/apps/details?id=com.bowled.Bowled&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style={{     width: "104%",
+    height: "76%"}} alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+</div>
+          <a  href="tel:+908 89097 890">
+            {/* +908 89097 890 */}
+          </a>
         </div>
       </div>
       <div className="col-md-3 col-sm-6">
         <div className="social_icons">
-          <a href="#"><img src={facebook} /></a>
-          <a href="#"><img src={insta} /></a>
-          <a href="#"><img src={twitter} /></a>
-          <a href="#"><img src={linkedin} /></a>
+          <a href="https://www.facebook.com/bowleddotio"><img src={facebook} /></a>
+          <a href="https://www.instagram.com/bowled.io/"><img src={insta} /></a>
+          <a href="https://twitter.com/bowleddotio"><img src={twitter} /></a>
+          <a href="https://www.linkedin.com/company/bowleddotio/posts/?feedView=all"><img src={linkedin} /></a>
         </div>
       </div>
     </div>
   </div>
   <div className="copyright">
-    Copyright ® 2022 Lorem All rights Rcerved
+  Copyright 2002 FanEngage Pte. Ltd., All Rights Reserved
   </div>
 </footer>
 

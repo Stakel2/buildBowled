@@ -124,6 +124,7 @@ export const userApiCallPut = (url, data, params = {}, toastOn) =>
 
 export const userApiCallPatch = (url, data, params = {}, toastOn) =>
   new Promise((resolve) => {
+    console.log("data >>>>>>>>0 " ,data);
     userApi
       .patch(formatUrl(url, params), data)
       .then((res) => {
